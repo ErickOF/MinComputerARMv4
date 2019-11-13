@@ -9,6 +9,6 @@ module ARMStruct(input logic clk, reset,
 	logic [3:0] ALUControl;
 	
 	ControlUnit controller(clk, reset, Instr[31:5], ALUFlags, RegSrc, RegWrite, ImmSrc, ALUSrc, ALUControl, MemWrite, MemtoReg, PCSrc);
-	datapath datap(clk, reset, RegSrc, RegWrite, ImmSrc, ALUSrc, ALUControl, MemtoReg, PCSrc, ALUFlags, PC, Instr, ALUResult, WriteData, ReadData);
+	datapath Datapath(clk, reset, RegSrc, RegWrite, ImmSrc, ALUSrc, ALUControl, MemtoReg, PCSrc, ALUFlags, PC, Instr, ALUResult, WriteData, ReadData);
 
 endmodule
