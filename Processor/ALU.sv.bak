@@ -27,4 +27,4 @@ flag_generator flag_generator_module (a, b, result, ALUControl, cout, Z, N, V, C
 sar            sar_module            (a, b, result_sar);
 sc             sc_module             (a, result_sc);
 
-endmodule 
+endmodule
