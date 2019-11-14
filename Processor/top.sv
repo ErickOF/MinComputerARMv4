@@ -13,8 +13,12 @@ module top (input logic clk, reset,
 	
 	instructionMem imem(PC, clk, Instr);
 	
-	addressingDecoder addrDeco(DataAdr,enableMemory, enablePointer, enableDog, enableDuck);
+	addressingDecoder addrDeco(DataAdr,enableMemory, enablePointer, enableBomb, enableEnemy);
 	
 	dataMem deme(DataAdr, WriteData, enableMemory, MemWrite, clk, ReadData);
+	
+	EnemiesRegister er(DataAdr,WriteData,enableEnemy,MemWrite, clk, ReadData, enemyPosX,enemyPosY);
+	
+	BombRegister br(DataAdr,WriteData,enableBomb,MemWrite, clk, ReadData, bombPosX,bombPosY);
 
 endmodule
