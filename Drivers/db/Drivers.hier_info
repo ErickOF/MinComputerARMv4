@@ -1,0 +1,11 @@
+|KeyboardDriver
+clk => ~NO_FANOUT~
+rst => ~NO_FANOUT~
+data => ~NO_FANOUT~
+direction[0] <= <GND>
+direction[1] <= <GND>
+direction[2] <= <GND>
+direction[3] <= <GND>
+direction[4] <= <GND>
+
+
