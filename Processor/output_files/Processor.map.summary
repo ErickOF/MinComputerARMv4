@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Mon Nov 11 10:48:39 2019
+Analysis & Synthesis Status : Successful - Tue Nov 12 18:00:07 2019
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : Processor
-Top-level Entity Name : instructionMem
+Top-level Entity Name : ARMStruct
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 65
+Total pins : 163
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

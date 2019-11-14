@@ -1,4 +1,4 @@
-module dataPath (
+module datapath (
 	input logic clk,reset,
 	input logic [1:0] RegSrc,
 	input logic RegWrite,
@@ -8,7 +8,7 @@ module dataPath (
 	input logic MemtoReg,
 	input logic PCSrc,
 	output logic [3:0] ALUFlags,
-	output logic [31:0] PC,
+	input logic [31:0] PC,
 	input logic [31:0] Instr,
 	output logic [31:0] ALUResult, WriteData,
 	input logic [31:0] ReadData
@@ -35,13 +35,10 @@ module dataPath (
 	bankReg rf(RA1,RA2,Instr[15:12], Result, PCPlus8, clk, RegWrite, reset, SrcA, WriteData);
 	mux2x1_nBits #(32) resmux(Result, ALUResult , ReadData , MemtoReg );
 	
-	extend ext(Instr[23:0], ImmSrc, ExtImm);
+	bitextender ext(Instr[23:0], ImmSrc, ExtImm);
 	
 	//ALU logic
 	
 	mux2x1_nBits #(32) srcbmux(SrcB , WriteData , ExtImm, ALUSrc );
 	ALU #(32) alu(ALUFlags, ALUResult, SrcA, SrcB, ALUControl);
-	
-
-
 endmodule

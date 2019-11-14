@@ -38,17 +38,32 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY instructionMem
+set_global_assignment -name TOP_LEVEL_ENTITY ARMStruct
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:05:34  NOVEMBER 10, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name BOARD "DE1-SoC Board"
-set_global_assignment -name SYSTEMVERILOG_FILE Processor.sv
-set_global_assignment -name SYSTEMVERILOG_FILE instructionMem.sv
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name SYSTEMVERILOG_FILE flag_generator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Substractor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE EnemiesRegister.sv
+set_global_assignment -name SYSTEMVERILOG_FILE dataMem.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ControlUnit.sv
+set_global_assignment -name SYSTEMVERILOG_FILE condLogic.sv
+set_global_assignment -name SYSTEMVERILOG_FILE condCheck.sv
+set_global_assignment -name SYSTEMVERILOG_FILE comparator.sv
+set_global_assignment -name SYSTEMVERILOG_FILE BombRegister.sv
+set_global_assignment -name SYSTEMVERILOG_FILE ARMStruct.sv
+set_global_assignment -name SYSTEMVERILOG_FILE addressingDecoder.sv
+set_global_assignment -name SYSTEMVERILOG_FILE Processor.sv
+set_global_assignment -name SYSTEMVERILOG_FILE instructionMem.sv
 set_global_assignment -name SYSTEMVERILOG_FILE regDecoder.sv
 set_global_assignment -name SYSTEMVERILOG_FILE bitextender.sv
 set_global_assignment -name SYSTEMVERILOG_FILE decoder.sv
