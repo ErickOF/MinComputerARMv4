@@ -2,7 +2,48 @@
 	"partitions" : [
 		{
 			"name" : "Top",
-			"pins" : []
+			"pins" : [
+				{
+					"name" : "KB_CODE[0]",
+					"strict" : false
+				},
+				{
+					"name" : "KB_CODE[1]",
+					"strict" : false
+				},
+				{
+					"name" : "KB_CODE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "KB_CODE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "KB_CODE[4]",
+					"strict" : false
+				},
+				{
+					"name" : "KB_CODE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "KB_CODE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "KB_CODE[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PS2_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "PS2_DATA",
+					"strict" : false
+				}
+			]
 		}
 	]
 }
