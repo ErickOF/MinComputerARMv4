@@ -1,0 +1,21 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "code[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data",
+					"strict" : false
+				},
+				{
+					"name" : "ps2_clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
