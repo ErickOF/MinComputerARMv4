@@ -1,4 +1,0 @@
-module KeyboardDriver (input clk,
-                       );
-
-endmodule // KeyboardDriver
