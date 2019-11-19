@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'KeyboardController:KC|last'
+Slack : -5.074
+TNS   : -79.374
+
+Type  : Slow 1100mV 85C Model Setup 'ps2_clk'
+Slack : -4.291
+TNS   : -20.640
+
+Type  : Slow 1100mV 85C Model Hold 'ps2_clk'
+Slack : 0.278
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'KeyboardController:KC|last'
+Slack : 0.676
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ps2_clk'
+Slack : -0.394
+TNS   : -10.862
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'KeyboardController:KC|last'
+Slack : -0.394
+TNS   : -8.197
+
+Type  : Slow 1100mV 0C Model Setup 'KeyboardController:KC|last'
+Slack : -5.019
+TNS   : -78.688
+
+Type  : Slow 1100mV 0C Model Setup 'ps2_clk'
+Slack : -4.245
+TNS   : -19.928
+
+Type  : Slow 1100mV 0C Model Hold 'ps2_clk'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'KeyboardController:KC|last'
+Slack : 0.688
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ps2_clk'
+Slack : -0.394
+TNS   : -11.205
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'KeyboardController:KC|last'
+Slack : -0.394
+TNS   : -8.136
+
+Type  : Fast 1100mV 85C Model Setup 'KeyboardController:KC|last'
+Slack : -2.939
+TNS   : -46.068
+
+Type  : Fast 1100mV 85C Model Setup 'ps2_clk'
+Slack : -2.816
+TNS   : -6.291
+
+Type  : Fast 1100mV 85C Model Hold 'ps2_clk'
+Slack : 0.156
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'KeyboardController:KC|last'
+Slack : 0.281
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ps2_clk'
+Slack : -0.366
+TNS   : -1.240
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'KeyboardController:KC|last'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'KeyboardController:KC|last'
+Slack : -2.846
+TNS   : -44.744
+
+Type  : Fast 1100mV 0C Model Setup 'ps2_clk'
+Slack : -2.215
+TNS   : -4.551
+
+Type  : Fast 1100mV 0C Model Hold 'ps2_clk'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'KeyboardController:KC|last'
+Slack : 0.258
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ps2_clk'
+Slack : -0.373
+TNS   : -1.434
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'KeyboardController:KC|last'
+Slack : 0.146
+TNS   : 0.000
+
+------------------------------------------------------------
