@@ -1,1 +1,0 @@
-# ARMv4 Processor
