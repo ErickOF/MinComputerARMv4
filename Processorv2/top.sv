@@ -19,10 +19,9 @@ module top (input logic clk, reset, data,
 	
 	//BombRegister br(DataAdr,WriteData,enableBomb, MemWrite, clk, ReadDataBombs, bombPosX, bombPosY);
 	
-	KeyboardRegister(DataAdr, WriteData, enableKey, MemWrite, clk, ReadDataKey);
+	KeyboardRegister key(DataAdr, WriteData, enableKey, MemWrite, clk, ReadDataKey);
 	
-	KeyboardDriver(clk, data, code);
+	KeyboardDriver keyDriver(clk, data, code);
 	
-
 endmodule
 
