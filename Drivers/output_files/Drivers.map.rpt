@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Drivers
-Tue Nov 19 17:52:25 2019
+Analysis & Synthesis report for Drivers
+Wed Nov 20 08:42:13 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,11 +7,19 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Port Connectivity Checks: "Decoder:D2"
-  6. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Inverted Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "Decoder:D2"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -34,42 +42,31 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Nov 19 17:52:25 2019       ;
-; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                 ; Drivers                                     ;
-; Top-level Entity Name         ; KeyboardDisplay                             ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Nov 20 08:42:13 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Drivers                                     ;
+; Top-level Entity Name           ; KeyboardDisplay                             ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 29                                          ;
+; Total pins                      ; 23                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -155,6 +152,121 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; KeyboardDisplay.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/KeyboardDisplay.sv    ;         ;
+; KeyboardController.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/KeyboardController.sv ;         ;
+; Decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/Decoder.sv            ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 24                         ;
+;                                             ;                            ;
+; Combinational ALUT usage for logic          ; 36                         ;
+;     -- 7 input functions                    ; 0                          ;
+;     -- 6 input functions                    ; 8                          ;
+;     -- 5 input functions                    ; 5                          ;
+;     -- 4 input functions                    ; 16                         ;
+;     -- <=3 input functions                  ; 7                          ;
+;                                             ;                            ;
+; Dedicated logic registers                   ; 29                         ;
+;                                             ;                            ;
+; I/O pins                                    ; 23                         ;
+;                                             ;                            ;
+; Total DSP Blocks                            ; 0                          ;
+;                                             ;                            ;
+; Maximum fan-out node                        ; KeyboardController:KC|last ;
+; Maximum fan-out                             ; 17                         ;
+; Total fan-out                               ; 274                        ;
+; Average fan-out                             ; 2.47                       ;
++---------------------------------------------+----------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                              ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Entity Name        ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------+--------------+
+; |KeyboardDisplay           ; 36 (7)              ; 29 (0)                    ; 0                 ; 0          ; 23   ; 0            ; |KeyboardDisplay                       ; KeyboardDisplay    ; work         ;
+;    |Decoder:D1|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |KeyboardDisplay|Decoder:D1            ; Decoder            ; work         ;
+;    |Decoder:D2|            ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |KeyboardDisplay|Decoder:D2            ; Decoder            ; work         ;
+;    |KeyboardController:KC| ; 15 (15)             ; 29 (29)                   ; 0                 ; 0          ; 0    ; 0            ; |KeyboardDisplay|KeyboardController:KC ; KeyboardController ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------+--------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 29    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 16    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Inverted Register Statistics                        ;
++-------------------------------------------+---------+
+; Inverted Register                         ; Fan out ;
++-------------------------------------------+---------+
+; KeyboardController:KC|code[5]             ; 9       ;
+; KeyboardController:KC|code[6]             ; 9       ;
+; KeyboardController:KC|code[4]             ; 9       ;
+; KeyboardController:KC|code[7]             ; 2       ;
+; KeyboardController:KC|keycode[4]          ; 3       ;
+; KeyboardController:KC|keycode[5]          ; 3       ;
+; KeyboardController:KC|keycode[6]          ; 3       ;
+; KeyboardController:KC|keycode[7]          ; 3       ;
+; KeyboardController:KC|previous_keycode[5] ; 1       ;
+; KeyboardController:KC|previous_keycode[6] ; 1       ;
+; KeyboardController:KC|previous_keycode[4] ; 1       ;
+; KeyboardController:KC|previous_keycode[7] ; 1       ;
+; KeyboardController:KC|counter[0]          ; 13      ;
+; Total number of inverted registers = 13   ;         ;
++-------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |KeyboardDisplay|KeyboardController:KC|counter[1] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------+
+
+
 +----------------------------------------+
 ; Port Connectivity Checks: "Decoder:D2" ;
 +------+-------+----------+--------------+
@@ -164,14 +276,46 @@ refer to the applicable agreement for further details.
 +------+-------+----------+--------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 29                          ;
+;     ENA               ; 16                          ;
+;     plain             ; 13                          ;
+; arriav_lcell_comb     ; 51                          ;
+;     normal            ; 51                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 14                          ;
+;         3 data inputs ; 7                           ;
+;         4 data inputs ; 16                          ;
+;         5 data inputs ; 5                           ;
+;         6 data inputs ; 8                           ;
+; boundary_port         ; 23                          ;
+;                       ;                             ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.57                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 19 17:52:14 2019
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Drivers -c Drivers --analysis_and_elaboration
+    Info: Processing started: Wed Nov 20 08:41:52 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Drivers -c Drivers
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file keyboarddisplay.sv
@@ -186,10 +330,21 @@ Info (12127): Elaborating entity "KeyboardDisplay" for the top level hierarchy
 Warning (10034): Output port "leds[5]" at KeyboardDisplay.sv(5) has no driver File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/KeyboardDisplay.sv Line: 5
 Info (12128): Elaborating entity "KeyboardController" for hierarchy "KeyboardController:KC" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/KeyboardDisplay.sv Line: 13
 Info (12128): Elaborating entity "Decoder" for hierarchy "Decoder:D1" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/KeyboardDisplay.sv Line: 15
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4777 megabytes
-    Info: Processing ended: Tue Nov 19 17:52:25 2019
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:23
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "leds[5]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/KeyboardDisplay.sv Line: 5
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Drivers/KeyboardDisplay.sv Line: 1
+Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 20 output pins
+    Info (21061): Implemented 52 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4858 megabytes
+    Info: Processing ended: Wed Nov 20 08:42:13 2019
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:43
 
 

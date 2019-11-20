@@ -1,5 +1,5 @@
-Analysis & Elaboration report for Single-Cycle-ARM-Processor
-Tue Nov 19 21:05:28 2019
+Analysis & Synthesis report for Single-Cycle-ARM-Processor
+Wed Nov 20 08:34:12 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -7,38 +7,46 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
-  5. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
-  6. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:pcmux
-  7. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|flopr:pcreg
-  8. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd1
-  9. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd2
- 10. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra1mux
- 11. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra2mux
- 12. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:resmux
- 13. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:srcbmux
- 14. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu
- 15. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|and_gate:and_module
- 16. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|or_gate:or_module
- 17. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module
- 18. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module
- 19. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module
- 20. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|slr:slr_module
- 21. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sll:sll_module
- 22. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module
- 23. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module
- 24. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sar:sar_module
- 25. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sc:sc_module
- 26. Analysis & Elaboration Settings
- 27. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|ALU:alu"
- 28. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|mux2:ra1mux"
- 29. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd2"
- 30. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd1"
- 31. Port Connectivity Checks: "processor:dut"
- 32. Analysis & Elaboration Messages
- 33. Analysis & Elaboration Suppressed Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+ 12. Parameter Settings for User Entity Instance: Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+ 13. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:pcmux
+ 14. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|flopr:pcreg
+ 15. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|adder:pcadd1
+ 16. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|adder:pcadd2
+ 17. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:ra1mux
+ 18. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:ra2mux
+ 19. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:resmux
+ 20. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:srcbmux
+ 21. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu
+ 22. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|and_gate:and_module
+ 23. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|or_gate:or_module
+ 24. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module
+ 25. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module
+ 26. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module
+ 27. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|slr:slr_module
+ 28. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|sll:sll_module
+ 29. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module
+ 30. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module
+ 31. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|sar:sar_module
+ 32. Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|sc:sc_module
+ 33. Port Connectivity Checks: "register:KeyboardReg"
+ 34. Port Connectivity Checks: "Arm:arm|datapath:dp|ALU:alu"
+ 35. Port Connectivity Checks: "Arm:arm|datapath:dp|mux2:ra1mux"
+ 36. Port Connectivity Checks: "Arm:arm|datapath:dp|adder:pcadd2"
+ 37. Port Connectivity Checks: "Arm:arm|datapath:dp|adder:pcadd1"
+ 38. Post-Synthesis Netlist Statistics for Top Partition
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
+ 41. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -61,22 +69,114 @@ refer to the applicable agreement for further details.
 
 
 
-+-----------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                              ;
-+-------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Tue Nov 19 21:05:28 2019       ;
-; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                 ; Single-Cycle-ARM-Processor                  ;
-; Top-level Entity Name         ; processor_testbench                         ;
-; Family                        ; Cyclone V                                   ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
-; Total registers               ; N/A until Partition Merge                   ;
-; Total pins                    ; N/A until Partition Merge                   ;
-; Total virtual pins            ; N/A until Partition Merge                   ;
-; Total block memory bits       ; N/A until Partition Merge                   ;
-; Total PLLs                    ; N/A until Partition Merge                   ;
-; Total DLLs                    ; N/A until Partition Merge                   ;
-+-------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Nov 20 08:34:11 2019       ;
+; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                   ; Single-Cycle-ARM-Processor                  ;
+; Top-level Entity Name           ; processor                                   ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 2307                                        ;
+; Total pins                      ; 69                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                                     ;
++---------------------------------------------------------------------------------+--------------------+----------------------------+
+; Option                                                                          ; Setting            ; Default Value              ;
++---------------------------------------------------------------------------------+--------------------+----------------------------+
+; Device                                                                          ; 5CSEMA5F31C6       ;                            ;
+; Top-level entity name                                                           ; processor          ; Single-Cycle-ARM-Processor ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V                  ;
+; Use smart compilation                                                           ; Off                ; Off                        ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                         ;
+; Enable compact report table                                                     ; Off                ; Off                        ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto                       ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                        ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                        ;
+; Preserve fewer node names                                                       ; On                 ; On                         ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable                     ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001               ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993                  ;
+; State Machine Processing                                                        ; Auto               ; Auto                       ;
+; Safe State Machine                                                              ; Off                ; Off                        ;
+; Extract Verilog State Machines                                                  ; On                 ; On                         ;
+; Extract VHDL State Machines                                                     ; On                 ; On                         ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                        ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000                       ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                        ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                         ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                         ;
+; Parallel Synthesis                                                              ; On                 ; On                         ;
+; DSP Block Balancing                                                             ; Auto               ; Auto                       ;
+; NOT Gate Push-Back                                                              ; On                 ; On                         ;
+; Power-Up Don't Care                                                             ; On                 ; On                         ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                        ;
+; Remove Duplicate Registers                                                      ; On                 ; On                         ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                        ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                        ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                        ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                        ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                        ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                         ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                        ;
+; Optimization Technique                                                          ; Balanced           ; Balanced                   ;
+; Carry Chain Length                                                              ; 70                 ; 70                         ;
+; Auto Carry Chains                                                               ; On                 ; On                         ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                         ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                        ;
+; Auto ROM Replacement                                                            ; On                 ; On                         ;
+; Auto RAM Replacement                                                            ; On                 ; On                         ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                         ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto                       ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto                       ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                         ;
+; Strict RAM Replacement                                                          ; Off                ; Off                        ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                         ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                        ;
+; Auto Resource Sharing                                                           ; Off                ; Off                        ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                        ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                        ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                        ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                         ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                        ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                         ;
+; Report Parameter Settings                                                       ; On                 ; On                         ;
+; Report Source Assignments                                                       ; On                 ; On                         ;
+; Report Connectivity Checks                                                      ; On                 ; On                         ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                        ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                          ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation         ;
+; HDL message level                                                               ; Level2             ; Level2                     ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                        ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000                       ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000                       ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                        ;
+; Clock MUX Protection                                                            ; On                 ; On                         ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                        ;
+; Block Design Naming                                                             ; Auto               ; Auto                       ;
+; SDC constraint protection                                                       ; Off                ; Off                        ;
+; Synthesis Effort                                                                ; Auto               ; Auto                       ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                         ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                        ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium                     ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto                       ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                         ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                         ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                        ;
++---------------------------------------------------------------------------------+--------------------+----------------------------+
 
 
 +------------------------------------------+
@@ -88,225 +188,559 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                       ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                     ; Library ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
+; KeyboardController.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/KeyboardController.sv ;         ;
+; ALU/xor_gate.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/xor_gate.sv       ;         ;
+; ALU/slr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/slr.sv            ;         ;
+; ALU/sll.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sll.sv            ;         ;
+; ALU/sc.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sc.sv             ;         ;
+; ALU/sar.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sar.sv            ;         ;
+; ALU/or_gate.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/or_gate.sv        ;         ;
+; ALU/mux_result.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/mux_result.sv     ;         ;
+; ALU/mux_not.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/mux_not.sv        ;         ;
+; ALU/fulladder.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/fulladder.sv      ;         ;
+; ALU/flag_generator.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/flag_generator.sv ;         ;
+; ALU/and_gate.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/and_gate.sv       ;         ;
+; ALU/ALU.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv            ;         ;
+; Arm.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/Arm.sv                ;         ;
+; controller.sv                    ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/controller.sv         ;         ;
+; decoder.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/decoder.sv            ;         ;
+; condlogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/condlogic.sv          ;         ;
+; condcheck.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/condcheck.sv          ;         ;
+; datapath.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv           ;         ;
+; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/regfile.sv            ;         ;
+; adder.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/adder.sv              ;         ;
+; extend.sv                        ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/extend.sv             ;         ;
+; flopr.sv                         ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/flopr.sv              ;         ;
+; flopenr.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/flopenr.sv            ;         ;
+; mux2.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/mux2.sv               ;         ;
+; processor.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv          ;         ;
+; dmem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/dmem.sv               ;         ;
+; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/imem.sv               ;         ;
+; register.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/register.sv           ;         ;
+; memfile.txt                      ; yes             ; Auto-Found File              ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/memfile.txt           ;         ;
++----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; WIDTH          ; 2     ; Signed Integer                                                                       ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 1724      ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 1454      ;
+;     -- 7 input functions                    ; 4         ;
+;     -- 6 input functions                    ; 826       ;
+;     -- 5 input functions                    ; 209       ;
+;     -- 4 input functions                    ; 154       ;
+;     -- <=3 input functions                  ; 261       ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 2307      ;
+;                                             ;           ;
+; I/O pins                                    ; 69        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 2307      ;
+; Total fan-out                               ; 14439     ;
+; Average fan-out                             ; 3.70      ;
++---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:pcmux ;
-+----------------+-------+------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                             ;
-+----------------+-------+------------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                   ;
-+----------------+-------+------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|flopr:pcreg ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd1 ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd2 ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra1mux ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra2mux ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; WIDTH          ; 4     ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:resmux ;
-+----------------+-------+-------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                              ;
-+----------------+-------+-------------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                    ;
-+----------------+-------+-------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:srcbmux ;
-+----------------+-------+--------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                               ;
-+----------------+-------+--------------------------------------------------------------------+
-; WIDTH          ; 32    ; Signed Integer                                                     ;
-+----------------+-------+--------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu ;
-+----------------+-------+---------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                          ;
-+----------------+-------+---------------------------------------------------------------+
-; n              ; 32    ; Signed Integer                                                ;
-+----------------+-------+---------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|and_gate:and_module ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|or_gate:or_module ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                            ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                  ;
-+----------------+-------+---------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                              ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                    ;
-+----------------+-------+-----------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                 ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                       ;
-+----------------+-------+--------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                           ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                       ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node                         ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                         ; Entity Name    ; Library Name ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+----------------+--------------+
+; |processor                                         ; 1454 (0)            ; 2307 (0)                  ; 0                 ; 0          ; 69   ; 0            ; |processor                                                                  ; processor      ; work         ;
+;    |Arm:arm|                                       ; 661 (0)             ; 259 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm                                                          ; Arm            ; work         ;
+;       |controller:c|                               ; 20 (0)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|controller:c                                             ; controller     ; work         ;
+;          |condlogic:cl|                            ; 14 (4)              ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|controller:c|condlogic:cl                                ; condlogic      ; work         ;
+;             |condcheck:cc|                         ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|controller:c|condlogic:cl|condcheck:cc                   ; condcheck      ; work         ;
+;             |flopenr:flagreg0|                     ; 7 (7)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0               ; flopenr        ; work         ;
+;             |flopenr:flagreg1|                     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1               ; flopenr        ; work         ;
+;          |decoder:dec|                             ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|controller:c|decoder:dec                                 ; decoder        ; work         ;
+;       |datapath:dp|                                ; 641 (0)             ; 256 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp                                              ; datapath       ; work         ;
+;          |ALU:alu|                                 ; 136 (0)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|ALU:alu                                      ; ALU            ; work         ;
+;             |flag_generator:flag_generator_module| ; 28 (28)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module ; flag_generator ; work         ;
+;             |fulladder:fulladder_module|           ; 33 (33)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module           ; fulladder      ; work         ;
+;             |mux_not:mux_not_module|               ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module               ; mux_not        ; work         ;
+;             |mux_result:mux_result_module|         ; 69 (69)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module         ; mux_result     ; work         ;
+;          |adder:pcadd1|                            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|adder:pcadd1                                 ; adder          ; work         ;
+;          |adder:pcadd2|                            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|adder:pcadd2                                 ; adder          ; work         ;
+;          |flopr:pcreg|                             ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|flopr:pcreg                                  ; flopr          ; work         ;
+;          |mux2:ra1mux|                             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|mux2:ra1mux                                  ; mux2           ; work         ;
+;          |mux2:ra2mux|                             ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|mux2:ra2mux                                  ; mux2           ; work         ;
+;          |mux2:resmux|                             ; 51 (51)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|mux2:resmux                                  ; mux2           ; work         ;
+;          |mux2:srcbmux|                            ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|mux2:srcbmux                                 ; mux2           ; work         ;
+;          |regfile:rf|                              ; 353 (353)           ; 224 (224)                 ; 0                 ; 0          ; 0    ; 0            ; |processor|Arm:arm|datapath:dp|regfile:rf                                   ; regfile        ; work         ;
+;    |dmem:DataMem|                                  ; 782 (782)           ; 2048 (2048)               ; 0                 ; 0          ; 0    ; 0            ; |processor|dmem:DataMem                                                     ; dmem           ; work         ;
+;    |imem:InstMem|                                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |processor|imem:InstMem                                                     ; imem           ; work         ;
++----------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-----------------------------------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 +-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|slr:slr_module ;
-+----------------+-------+------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                         ;
-+----------------+-------+------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                               ;
-+----------------+-------+------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                    ;
++---------------------------------------------------------+---------------------------------------------+
+; Register name                                           ; Reason for Removal                          ;
++---------------------------------------------------------+---------------------------------------------+
+; Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0|q[1] ; Lost fanout                                 ;
+; Arm:arm|datapath:dp|regfile:rf|rf~32                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~192                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~288                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~320                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~352                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~384                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~416                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~448                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~385                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~33                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~289                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~417                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~193                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~321                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~449                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~353                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~34                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~194                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~290                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~322                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~354                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~386                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~418                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~450                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~387                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~35                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~291                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~419                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~195                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~323                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~451                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~355                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~36                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~196                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~292                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~324                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~356                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~388                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~420                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~452                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~389                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~37                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~293                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~421                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~197                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~325                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~453                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~357                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~38                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~198                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~294                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~326                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~358                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~390                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~422                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~454                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~391                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~39                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~295                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~423                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~199                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~327                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~455                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~359                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~40                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~200                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~296                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~328                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~360                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~392                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~424                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~456                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~393                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~41                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~297                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~425                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~201                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~329                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~457                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~361                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~42                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~202                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~298                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~330                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~362                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~394                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~426                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~458                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~395                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~43                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~299                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~427                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~203                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~331                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~459                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~363                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~44                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~204                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~300                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~332                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~364                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~396                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~428                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~460                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~397                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~45                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~301                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~429                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~205                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~333                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~461                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~365                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~46                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~206                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~302                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~334                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~366                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~398                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~430                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~462                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~399                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~47                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~303                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~431                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~207                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~335                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~463                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~367                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~48                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~208                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~304                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~336                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~368                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~400                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~432                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~464                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~401                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~49                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~305                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~433                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~209                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~337                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~465                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~369                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~50                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~210                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~306                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~338                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~370                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~402                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~434                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~466                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~403                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~51                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~307                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~435                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~211                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~339                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~467                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~371                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~52                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~212                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~308                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~340                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~372                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~404                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~436                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~468                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~405                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~53                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~309                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~437                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~213                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~341                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~469                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~373                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~54                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~214                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~310                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~342                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~374                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~406                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~438                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~470                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~407                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~55                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~311                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~439                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~215                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~343                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~471                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~375                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~56                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~216                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~312                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~344                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~376                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~408                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~440                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~472                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~409                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~57                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~313                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~441                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~217                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~345                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~473                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~377                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~58                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~218                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~314                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~346                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~378                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~410                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~442                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~474                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~411                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~59                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~315                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~443                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~219                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~347                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~475                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~379                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~60                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~220                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~316                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~348                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~380                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~412                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~444                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~476                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~413                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~61                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~317                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~445                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~221                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~349                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~477                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~381                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~62                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~222                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~318                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~350                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~382                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~414                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~446                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~478                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~415                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~63                    ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~319                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~447                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~223                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~351                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~479                   ; Stuck at GND due to stuck port clock_enable ;
+; Arm:arm|datapath:dp|regfile:rf|rf~383                   ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 257                 ;                                             ;
++---------------------------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 2307  ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 30    ;
+; Number of registers using Asynchronous Clear ; 35    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2276  ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |processor|Arm:arm|datapath:dp|mux2:srcbmux|y[24]                        ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |processor|Arm:arm|datapath:dp|mux2:srcbmux|y[1]                         ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |processor|Arm:arm|datapath:dp|mux2:srcbmux|y[6]                         ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |processor|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module|Mux1 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sll:sll_module ;
-+----------------+-------+------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                         ;
-+----------------+-------+------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                               ;
-+----------------+-------+------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module ;
-+----------------+-------+--------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                       ;
-+----------------+-------+--------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                             ;
-+----------------+-------+--------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:pcmux ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module ;
-+----------------+-------+----------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                               ;
-+----------------+-------+----------------------------------------------------------------------------------------------------+
-; n              ; 32    ; Signed Integer                                                                                     ;
-+----------------+-------+----------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|flopr:pcreg ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sar:sar_module ;
-+----------------+-------+------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                         ;
-+----------------+-------+------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                               ;
-+----------------+-------+------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|adder:pcadd1 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|adder:pcadd2 ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:ra1mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:ra2mux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:resmux ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|mux2:srcbmux ;
++----------------+-------+------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                 ;
++----------------+-------+------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                       ;
++----------------+-------+------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; n              ; 32    ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|and_gate:and_module ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|or_gate:or_module ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module ;
++----------------+-------+---------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                ;
++----------------+-------+---------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                      ;
++----------------+-------+---------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sc:sc_module ;
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module ;
 +----------------+-------+----------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                       ;
 +----------------+-------+----------------------------------------------------------------------------+
@@ -315,278 +749,316 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                                    ;
-+---------------------------------------------------------------------------------+---------------------+----------------------------+
-; Option                                                                          ; Setting             ; Default Value              ;
-+---------------------------------------------------------------------------------+---------------------+----------------------------+
-; Device                                                                          ; 5CSEMA5F31C6        ;                            ;
-; Top-level entity name                                                           ; processor_testbench ; Single-Cycle-ARM-Processor ;
-; Family name                                                                     ; Cyclone V           ; Cyclone V                  ;
-; Use smart compilation                                                           ; Off                 ; Off                        ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                  ; On                         ;
-; Enable compact report table                                                     ; Off                 ; Off                        ;
-; Restructure Multiplexers                                                        ; Auto                ; Auto                       ;
-; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                 ; Off                        ;
-; Create Debugging Nodes for IP Cores                                             ; Off                 ; Off                        ;
-; Preserve fewer node names                                                       ; On                  ; On                         ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable              ; Enable                     ;
-; Verilog Version                                                                 ; Verilog_2001        ; Verilog_2001               ;
-; VHDL Version                                                                    ; VHDL_1993           ; VHDL_1993                  ;
-; State Machine Processing                                                        ; Auto                ; Auto                       ;
-; Safe State Machine                                                              ; Off                 ; Off                        ;
-; Extract Verilog State Machines                                                  ; On                  ; On                         ;
-; Extract VHDL State Machines                                                     ; On                  ; On                         ;
-; Ignore Verilog initial constructs                                               ; Off                 ; Off                        ;
-; Iteration limit for constant Verilog loops                                      ; 5000                ; 5000                       ;
-; Iteration limit for non-constant Verilog loops                                  ; 250                 ; 250                        ;
-; Add Pass-Through Logic to Inferred RAMs                                         ; On                  ; On                         ;
-; Infer RAMs from Raw Logic                                                       ; On                  ; On                         ;
-; Parallel Synthesis                                                              ; On                  ; On                         ;
-; DSP Block Balancing                                                             ; Auto                ; Auto                       ;
-; NOT Gate Push-Back                                                              ; On                  ; On                         ;
-; Power-Up Don't Care                                                             ; On                  ; On                         ;
-; Remove Redundant Logic Cells                                                    ; Off                 ; Off                        ;
-; Remove Duplicate Registers                                                      ; On                  ; On                         ;
-; Ignore CARRY Buffers                                                            ; Off                 ; Off                        ;
-; Ignore CASCADE Buffers                                                          ; Off                 ; Off                        ;
-; Ignore GLOBAL Buffers                                                           ; Off                 ; Off                        ;
-; Ignore ROW GLOBAL Buffers                                                       ; Off                 ; Off                        ;
-; Ignore LCELL Buffers                                                            ; Off                 ; Off                        ;
-; Ignore SOFT Buffers                                                             ; On                  ; On                         ;
-; Limit AHDL Integers to 32 Bits                                                  ; Off                 ; Off                        ;
-; Optimization Technique                                                          ; Balanced            ; Balanced                   ;
-; Carry Chain Length                                                              ; 70                  ; 70                         ;
-; Auto Carry Chains                                                               ; On                  ; On                         ;
-; Auto Open-Drain Pins                                                            ; On                  ; On                         ;
-; Perform WYSIWYG Primitive Resynthesis                                           ; Off                 ; Off                        ;
-; Auto ROM Replacement                                                            ; On                  ; On                         ;
-; Auto RAM Replacement                                                            ; On                  ; On                         ;
-; Auto DSP Block Replacement                                                      ; On                  ; On                         ;
-; Auto Shift Register Replacement                                                 ; Auto                ; Auto                       ;
-; Allow Shift Register Merging across Hierarchies                                 ; Auto                ; Auto                       ;
-; Auto Clock Enable Replacement                                                   ; On                  ; On                         ;
-; Strict RAM Replacement                                                          ; Off                 ; Off                        ;
-; Allow Synchronous Control Signals                                               ; On                  ; On                         ;
-; Force Use of Synchronous Clear Signals                                          ; Off                 ; Off                        ;
-; Auto Resource Sharing                                                           ; Off                 ; Off                        ;
-; Allow Any RAM Size For Recognition                                              ; Off                 ; Off                        ;
-; Allow Any ROM Size For Recognition                                              ; Off                 ; Off                        ;
-; Allow Any Shift Register Size For Recognition                                   ; Off                 ; Off                        ;
-; Use LogicLock Constraints during Resource Balancing                             ; On                  ; On                         ;
-; Ignore translate_off and synthesis_off directives                               ; Off                 ; Off                        ;
-; Timing-Driven Synthesis                                                         ; On                  ; On                         ;
-; Report Parameter Settings                                                       ; On                  ; On                         ;
-; Report Source Assignments                                                       ; On                  ; On                         ;
-; Report Connectivity Checks                                                      ; On                  ; On                         ;
-; Ignore Maximum Fan-Out Assignments                                              ; Off                 ; Off                        ;
-; Synchronization Register Chain Length                                           ; 3                   ; 3                          ;
-; Power Optimization During Synthesis                                             ; Normal compilation  ; Normal compilation         ;
-; HDL message level                                                               ; Level2              ; Level2                     ;
-; Suppress Register Optimization Related Messages                                 ; Off                 ; Off                        ;
-; Number of Removed Registers Reported in Synthesis Report                        ; 5000                ; 5000                       ;
-; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                ; 5000                       ;
-; Number of Inverted Registers Reported in Synthesis Report                       ; 100                 ; 100                        ;
-; Clock MUX Protection                                                            ; On                  ; On                         ;
-; Auto Gated Clock Conversion                                                     ; Off                 ; Off                        ;
-; Block Design Naming                                                             ; Auto                ; Auto                       ;
-; SDC constraint protection                                                       ; Off                 ; Off                        ;
-; Synthesis Effort                                                                ; Auto                ; Auto                       ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                  ; On                         ;
-; Pre-Mapping Resynthesis Optimization                                            ; Off                 ; Off                        ;
-; Analysis & Synthesis Message Level                                              ; Medium              ; Medium                     ;
-; Disable Register Merging Across Hierarchies                                     ; Auto                ; Auto                       ;
-; Resource Aware Inference For Block RAM                                          ; On                  ; On                         ;
-; Automatic Parallel Synthesis                                                    ; On                  ; On                         ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                 ; Off                        ;
-+---------------------------------------------------------------------------------+---------------------+----------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|slr:slr_module ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|ALU:alu" ;
-+------------------+-------+----------+---------------------------------+
-; Port             ; Type  ; Severity ; Details                         ;
-+------------------+-------+----------+---------------------------------+
-; ALUControl[3..2] ; Input ; Info     ; Stuck at GND                    ;
-+------------------+-------+----------+---------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|sll:sll_module ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|mux2:ra1mux" ;
-+------+-------+----------+-------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                         ;
-+------+-------+----------+-------------------------------------------------+
-; d1   ; Input ; Info     ; Stuck at VCC                                    ;
-+------+-------+----------+-------------------------------------------------+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd2" ;
-+----------+-------+----------+----------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                      ;
-+----------+-------+----------+----------------------------------------------+
-; b[31..3] ; Input ; Info     ; Stuck at GND                                 ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND                                 ;
-; b[2]     ; Input ; Info     ; Stuck at VCC                                 ;
-+----------+-------+----------+----------------------------------------------+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd1" ;
-+----------+-------+----------+----------------------------------------------+
-; Port     ; Type  ; Severity ; Details                                      ;
-+----------+-------+----------+----------------------------------------------+
-; b[31..3] ; Input ; Info     ; Stuck at GND                                 ;
-; b[1..0]  ; Input ; Info     ; Stuck at GND                                 ;
-; b[2]     ; Input ; Info     ; Stuck at VCC                                 ;
-+----------+-------+----------+----------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|sar:sar_module ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Arm:arm|datapath:dp|ALU:alu|sc:sc_module ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "processor:dut"                                                                           ;
+; Port Connectivity Checks: "register:KeyboardReg"                                                                    ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port      ; Type   ; Severity ; Details                                                                             ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
-; clk       ; Input  ; Info     ; Stuck at GND                                                                        ;
-; WriteData ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; DataAdr   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; MemWrite  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; wd[31..8] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rd        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++---------------------------------------------------------+
+; Port Connectivity Checks: "Arm:arm|datapath:dp|ALU:alu" ;
++------------------+-------+----------+-------------------+
+; Port             ; Type  ; Severity ; Details           ;
++------------------+-------+----------+-------------------+
+; ALUControl[3..2] ; Input ; Info     ; Stuck at GND      ;
++------------------+-------+----------+-------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "Arm:arm|datapath:dp|mux2:ra1mux" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "Arm:arm|datapath:dp|adder:pcadd2" ;
++----------+-------+----------+--------------------------------+
+; Port     ; Type  ; Severity ; Details                        ;
++----------+-------+----------+--------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
++----------+-------+----------+--------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "Arm:arm|datapath:dp|adder:pcadd1" ;
++----------+-------+----------+--------------------------------+
+; Port     ; Type  ; Severity ; Details                        ;
++----------+-------+----------+--------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                   ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                   ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                   ;
++----------+-------+----------+--------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 2307                        ;
+;     CLR               ; 1                           ;
+;     CLR SLD           ; 30                          ;
+;     ENA               ; 2272                        ;
+;     ENA CLR           ; 4                           ;
+; arriav_lcell_comb     ; 1454                        ;
+;     arith             ; 60                          ;
+;         1 data inputs ; 60                          ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 1357                        ;
+;         2 data inputs ; 68                          ;
+;         3 data inputs ; 123                         ;
+;         4 data inputs ; 131                         ;
+;         5 data inputs ; 209                         ;
+;         6 data inputs ; 826                         ;
+;     shared            ; 33                          ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 6                           ;
+;         3 data inputs ; 3                           ;
+;         4 data inputs ; 23                          ;
+; boundary_port         ; 69                          ;
+;                       ;                             ;
+; Max LUT depth         ; 11.60                       ;
+; Average LUT depth     ; 6.68                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:10     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 19 21:05:11 2019
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Single-Cycle-ARM-Processor -c Single-Cycle-ARM-Processor --analysis_and_elaboration
+    Info: Processing started: Wed Nov 20 08:33:40 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Single-Cycle-ARM-Processor -c Single-Cycle-ARM-Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file keyboardcontroller.sv
+    Info (12023): Found entity 1: KeyboardController File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/KeyboardController.sv Line: 29
 Info (12021): Found 1 design units, including 1 entities, in source file alu/xor_gate_test.sv
-    Info (12023): Found entity 1: xor_gate_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/xor_gate_test.sv Line: 1
+    Info (12023): Found entity 1: xor_gate_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/xor_gate_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/xor_gate.sv
-    Info (12023): Found entity 1: xor_gate File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/xor_gate.sv Line: 1
+    Info (12023): Found entity 1: xor_gate File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/xor_gate.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/srl_test.sv
-    Info (12023): Found entity 1: srl_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/srl_test.sv Line: 1
+    Info (12023): Found entity 1: srl_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/srl_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/slr.sv
-    Info (12023): Found entity 1: slr File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/slr.sv Line: 1
+    Info (12023): Found entity 1: slr File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/slr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sll_test.sv
-    Info (12023): Found entity 1: sll_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sll_test.sv Line: 1
+    Info (12023): Found entity 1: sll_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sll_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sll.sv
-    Info (12023): Found entity 1: sll File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sll.sv Line: 1
+    Info (12023): Found entity 1: sll File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sll.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sc_test.sv
-    Info (12023): Found entity 1: sc_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sc_test.sv Line: 1
+    Info (12023): Found entity 1: sc_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sc_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sc.sv
-    Info (12023): Found entity 1: sc File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sc.sv Line: 1
+    Info (12023): Found entity 1: sc File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sc.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sar_test.sv
-    Info (12023): Found entity 1: sar_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sar_test.sv Line: 1
+    Info (12023): Found entity 1: sar_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sar_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/sar.sv
-    Info (12023): Found entity 1: sar File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sar.sv Line: 1
+    Info (12023): Found entity 1: sar File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/sar.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/or_gate_test.sv
-    Info (12023): Found entity 1: or_gate_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/or_gate_test.sv Line: 1
+    Info (12023): Found entity 1: or_gate_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/or_gate_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/or_gate.sv
-    Info (12023): Found entity 1: or_gate File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/or_gate.sv Line: 1
+    Info (12023): Found entity 1: or_gate File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/or_gate.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_result_test.sv
-    Info (12023): Found entity 1: mux_result_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_result_test.sv Line: 1
+    Info (12023): Found entity 1: mux_result_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/mux_result_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_result.sv
-    Info (12023): Found entity 1: mux_result File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_result.sv Line: 1
+    Info (12023): Found entity 1: mux_result File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/mux_result.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_not_test.sv
-    Info (12023): Found entity 1: mux_not_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_not_test.sv Line: 1
+    Info (12023): Found entity 1: mux_not_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/mux_not_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_not.sv
-    Info (12023): Found entity 1: mux_not File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_not.sv Line: 1
+    Info (12023): Found entity 1: mux_not File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/mux_not.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/fulladder.sv
-    Info (12023): Found entity 1: fulladder File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/fulladder.sv Line: 1
+    Info (12023): Found entity 1: fulladder File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/fulladder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_generator_test.sv
-    Info (12023): Found entity 1: flag_generator_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/flag_generator_test.sv Line: 1
+    Info (12023): Found entity 1: flag_generator_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/flag_generator_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_generator.sv
-    Info (12023): Found entity 1: flag_generator File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/flag_generator.sv Line: 1
+    Info (12023): Found entity 1: flag_generator File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/flag_generator.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/and_gate_test.sv
-    Info (12023): Found entity 1: and_gate_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/and_gate_test.sv Line: 1
+    Info (12023): Found entity 1: and_gate_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/and_gate_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/and_gate.sv
-    Info (12023): Found entity 1: and_gate File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/and_gate.sv Line: 1
+    Info (12023): Found entity 1: and_gate File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/and_gate.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu_test.sv
-    Info (12023): Found entity 1: ALU_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU_test.sv Line: 1
+    Info (12023): Found entity 1: ALU_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/alu.sv
-    Info (12023): Found entity 1: ALU File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu/add_sub_test.sv
-    Info (12023): Found entity 1: add_sub_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/add_sub_test.sv Line: 1
+    Info (12023): Found entity 1: add_sub_test File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/add_sub_test.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
-    Info (12023): Found entity 1: Arm File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/Arm.sv Line: 1
+    Info (12023): Found entity 1: Arm File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/Arm.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
-    Info (12023): Found entity 1: controller File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/controller.sv Line: 1
+    Info (12023): Found entity 1: controller File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/controller.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
-    Info (12023): Found entity 1: decoder File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/decoder.sv Line: 1
+    Info (12023): Found entity 1: decoder File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/decoder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condlogic.sv
-    Info (12023): Found entity 1: condlogic File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condlogic.sv Line: 1
+    Info (12023): Found entity 1: condlogic File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/condlogic.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file condcheck.sv
-    Info (12023): Found entity 1: condcheck File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condcheck.sv Line: 1
+    Info (12023): Found entity 1: condcheck File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/condcheck.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
-    Info (12023): Found entity 1: datapath File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 1
+    Info (12023): Found entity 1: datapath File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
-    Info (12023): Found entity 1: regfile File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/regfile.sv Line: 1
+    Info (12023): Found entity 1: regfile File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/regfile.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
-    Info (12023): Found entity 1: adder File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/adder.sv Line: 1
+    Info (12023): Found entity 1: adder File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
-    Info (12023): Found entity 1: extend File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/extend.sv Line: 1
+    Info (12023): Found entity 1: extend File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/extend.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
-    Info (12023): Found entity 1: flopr File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/flopr.sv Line: 1
+    Info (12023): Found entity 1: flopr File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/flopr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
-    Info (12023): Found entity 1: flopenr File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/flopenr.sv Line: 1
+    Info (12023): Found entity 1: flopenr File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/flopenr.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
-    Info (12023): Found entity 1: mux2 File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/mux2.sv Line: 1
+    Info (12023): Found entity 1: mux2 File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/mux2.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor.sv
-    Info (12023): Found entity 1: processor File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 1
+    Info (12023): Found entity 1: processor File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
-    Info (12023): Found entity 1: dmem File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/dmem.sv Line: 1
+    Info (12023): Found entity 1: dmem File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/dmem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
-    Info (12023): Found entity 1: imem File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 1
+    Info (12023): Found entity 1: imem File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/imem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file processor_testbench.sv
-    Info (12023): Found entity 1: processor_testbench File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor_testbench.sv Line: 1
-Info (12127): Elaborating entity "processor_testbench" for the top level hierarchy
-Info (12128): Elaborating entity "processor" for hierarchy "processor:dut" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor_testbench.sv Line: 9
-Info (12128): Elaborating entity "Arm" for hierarchy "processor:dut|Arm:arm" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 8
-Info (12128): Elaborating entity "controller" for hierarchy "processor:dut|Arm:arm|controller:c" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/Arm.sv Line: 12
-Info (12128): Elaborating entity "decoder" for hierarchy "processor:dut|Arm:arm|controller:c|decoder:dec" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/controller.sv Line: 15
-Info (12128): Elaborating entity "condlogic" for hierarchy "processor:dut|Arm:arm|controller:c|condlogic:cl" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/controller.sv Line: 16
-Info (12128): Elaborating entity "flopenr" for hierarchy "processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condlogic.sv Line: 12
-Info (12128): Elaborating entity "condcheck" for hierarchy "processor:dut|Arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condlogic.sv Line: 16
-Info (12128): Elaborating entity "datapath" for hierarchy "processor:dut|Arm:arm|datapath:dp" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/Arm.sv Line: 13
-Info (12128): Elaborating entity "mux2" for hierarchy "processor:dut|Arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 20
-Info (12128): Elaborating entity "flopr" for hierarchy "processor:dut|Arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 21
-Info (12128): Elaborating entity "adder" for hierarchy "processor:dut|Arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 22
-Info (12128): Elaborating entity "mux2" for hierarchy "processor:dut|Arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 26
-Info (12128): Elaborating entity "regfile" for hierarchy "processor:dut|Arm:arm|datapath:dp|regfile:rf" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 28
-Info (12128): Elaborating entity "extend" for hierarchy "processor:dut|Arm:arm|datapath:dp|extend:ext" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 30
-Info (12128): Elaborating entity "ALU" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 34
-Info (12128): Elaborating entity "and_gate" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|and_gate:and_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 18
-Info (12128): Elaborating entity "or_gate" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|or_gate:or_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 19
-Info (12128): Elaborating entity "xor_gate" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 20
-Info (12128): Elaborating entity "mux_not" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 21
-Info (12128): Elaborating entity "fulladder" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 22
-Info (12128): Elaborating entity "slr" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|slr:slr_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 23
-Info (12128): Elaborating entity "sll" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|sll:sll_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 24
-Info (12128): Elaborating entity "mux_result" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 25
-Info (12128): Elaborating entity "flag_generator" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 26
-Info (12128): Elaborating entity "sar" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|sar:sar_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 27
-Info (12128): Elaborating entity "sc" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|sc:sc_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 28
-Info (12128): Elaborating entity "imem" for hierarchy "processor:dut|imem:imem" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 10
-Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 4
-Warning (10030): Net "RAM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 4
-Warning (10030): Net "RAM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 4
-Info (12128): Elaborating entity "dmem" for hierarchy "processor:dut|dmem:dmem" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 11
-Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/output_files/Single-Cycle-ARM-Processor.map.smsg
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4787 megabytes
-    Info: Processing ended: Tue Nov 19 21:05:28 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:24
+    Info (12023): Found entity 1: processor_testbench File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor_testbench.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regbomb.sv
+    Info (12023): Found entity 1: regbomb File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/regbomb.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file register.sv
+    Info (12023): Found entity 1: register File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/register.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux_rd_select.sv
+    Info (12023): Found entity 1: mux_rd_select File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/mux_rd_select.sv Line: 1
+Info (12127): Elaborating entity "processor" for the top level hierarchy
+Info (12128): Elaborating entity "Arm" for hierarchy "Arm:arm" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 10
+Info (12128): Elaborating entity "controller" for hierarchy "Arm:arm|controller:c" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/Arm.sv Line: 12
+Info (12128): Elaborating entity "decoder" for hierarchy "Arm:arm|controller:c|decoder:dec" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/controller.sv Line: 15
+Info (12128): Elaborating entity "condlogic" for hierarchy "Arm:arm|controller:c|condlogic:cl" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/controller.sv Line: 16
+Info (12128): Elaborating entity "flopenr" for hierarchy "Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/condlogic.sv Line: 12
+Info (12128): Elaborating entity "condcheck" for hierarchy "Arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/condlogic.sv Line: 16
+Info (12128): Elaborating entity "datapath" for hierarchy "Arm:arm|datapath:dp" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/Arm.sv Line: 13
+Info (12128): Elaborating entity "mux2" for hierarchy "Arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 20
+Info (12128): Elaborating entity "flopr" for hierarchy "Arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 21
+Info (12128): Elaborating entity "adder" for hierarchy "Arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "Arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 26
+Info (12128): Elaborating entity "regfile" for hierarchy "Arm:arm|datapath:dp|regfile:rf" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 28
+Info (12128): Elaborating entity "extend" for hierarchy "Arm:arm|datapath:dp|extend:ext" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 30
+Info (12128): Elaborating entity "ALU" for hierarchy "Arm:arm|datapath:dp|ALU:alu" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/datapath.sv Line: 34
+Info (12128): Elaborating entity "and_gate" for hierarchy "Arm:arm|datapath:dp|ALU:alu|and_gate:and_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 18
+Info (12128): Elaborating entity "or_gate" for hierarchy "Arm:arm|datapath:dp|ALU:alu|or_gate:or_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 19
+Info (12128): Elaborating entity "xor_gate" for hierarchy "Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 20
+Info (12128): Elaborating entity "mux_not" for hierarchy "Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 21
+Info (12128): Elaborating entity "fulladder" for hierarchy "Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 22
+Info (12128): Elaborating entity "slr" for hierarchy "Arm:arm|datapath:dp|ALU:alu|slr:slr_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 23
+Info (12128): Elaborating entity "sll" for hierarchy "Arm:arm|datapath:dp|ALU:alu|sll:sll_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 24
+Info (12128): Elaborating entity "mux_result" for hierarchy "Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 25
+Info (12128): Elaborating entity "flag_generator" for hierarchy "Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 26
+Info (12128): Elaborating entity "sar" for hierarchy "Arm:arm|datapath:dp|ALU:alu|sar:sar_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 27
+Info (12128): Elaborating entity "sc" for hierarchy "Arm:arm|datapath:dp|ALU:alu|sc:sc_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 28
+Info (12128): Elaborating entity "imem" for hierarchy "imem:InstMem" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 12
+Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/imem.sv Line: 4
+Warning (10030): Net "RAM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/imem.sv Line: 4
+Warning (10030): Net "RAM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/imem.sv Line: 4
+Info (12128): Elaborating entity "dmem" for hierarchy "dmem:DataMem" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 13
+Info (12128): Elaborating entity "KeyboardController" for hierarchy "KeyboardController:KC" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 15
+Info (12128): Elaborating entity "register" for hierarchy "register:KeyboardReg" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 19
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276007): RAM logic "dmem:DataMem|RAM" is uninferred due to asynchronous read logic File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/dmem.sv Line: 5
+    Info (276004): RAM logic "imem:InstMem|RAM" is uninferred due to inappropriate RAM size File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/imem.sv Line: 4
+    Info (276007): RAM logic "Arm:arm|datapath:dp|regfile:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/regfile.sv Line: 7
+Critical Warning (127005): Memory depth (32) in the design file differs from memory depth (23) in the Memory Initialization File "C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/db/Single-Cycle-ARM-Processor.ram0_imem_37c714.hdl.mif" -- setting initial value for remaining addresses to 0
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/output_files/Single-Cycle-ARM-Processor.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "ps2_clk" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 1
+    Warning (15610): No output dependent on input pin "data" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/processor.sv Line: 1
+Info (21057): Implemented 3828 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 65 output pins
+    Info (21061): Implemented 3759 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4855 megabytes
+    Info: Processing ended: Wed Nov 20 08:34:12 2019
+    Info: Elapsed time: 00:00:32
+    Info: Total CPU time (on all processors): 00:00:53
 
 
-+--------------------------------------------+
-; Analysis & Elaboration Suppressed Messages ;
-+--------------------------------------------+
-The suppressed messages can be found in C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/output_files/Single-Cycle-ARM-Processor.map.smsg.
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Single-Cycle-ARM-Processor/output_files/Single-Cycle-ARM-Processor.map.smsg.
 
 
