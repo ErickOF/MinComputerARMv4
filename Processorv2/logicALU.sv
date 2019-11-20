@@ -1,6 +1,6 @@
 module logicALU #(parameter n = 32)(input logic [n-1:0] a, b,
-															input logic [2:0] ALUControl,
-															output logic [n-1:0] result);
+												input logic [2:0] ALUControl,
+												output logic [n-1:0] result);
 
 logic 		  cout;
 logic [n-1:0] result_and;
@@ -27,4 +27,5 @@ mux_result     mux_result_module     (result_and, result_or, result_xor, result_
 
 
 endmodule
+
 
