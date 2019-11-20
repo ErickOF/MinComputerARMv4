@@ -1,0 +1,342 @@
+# Reading C:/intelFPGA_lite/17.1/modelsim_ase/tcl/vsim/pref.tcl
+# do Processor_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/17.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:25 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/top.sv 
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 17:28:25 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/flag_generator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:25 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/flag_generator.sv 
+# -- Compiling module flag_generator
+# 
+# Top level modules:
+# 	flag_generator
+# End time: 17:28:25 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/EnemiesRegister.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/EnemiesRegister.sv 
+# -- Compiling module EnemiesRegister
+# 
+# Top level modules:
+# 	EnemiesRegister
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/dataMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/dataMem.sv 
+# -- Compiling module dataMem
+# 
+# Top level modules:
+# 	dataMem
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ControlUnit.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ControlUnit.sv 
+# -- Compiling module ControlUnit
+# 
+# Top level modules:
+# 	ControlUnit
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condLogic.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condLogic.sv 
+# -- Compiling module condLogic
+# 
+# Top level modules:
+# 	condLogic
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condCheck.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condCheck.sv 
+# -- Compiling module condCheck
+# 
+# Top level modules:
+# 	condCheck
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/BombRegister.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/BombRegister.sv 
+# -- Compiling module BombRegister
+# 
+# Top level modules:
+# 	BombRegister
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ARMStruct.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ARMStruct.sv 
+# -- Compiling module ARMStruct
+# 
+# Top level modules:
+# 	ARMStruct
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/addressingDecoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/addressingDecoder.sv 
+# -- Compiling module addressingDecoder
+# 
+# Top level modules:
+# 	addressingDecoder
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bitextender.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bitextender.sv 
+# -- Compiling module bitextender
+# 
+# Top level modules:
+# 	bitextender
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/decoder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/decoder.sv 
+# -- Compiling module decoder
+# 
+# Top level modules:
+# 	decoder
+# End time: 17:28:26 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/datapath.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:26 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/datapath.sv 
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/fulladder.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/fulladder.sv 
+# -- Compiling module fulladder
+# 
+# Top level modules:
+# 	fulladder
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1_nBits.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1_nBits.sv 
+# -- Compiling module mux2x1_nBits
+# 
+# Top level modules:
+# 	mux2x1_nBits
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ALU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ALU.sv 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/and_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/and_gate.sv 
+# -- Compiling module and_gate
+# 
+# Top level modules:
+# 	and_gate
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_not.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_not.sv 
+# -- Compiling module mux_not
+# 
+# Top level modules:
+# 	mux_not
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_result.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_result.sv 
+# -- Compiling module mux_result
+# 
+# Top level modules:
+# 	mux_result
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/or_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/or_gate.sv 
+# -- Compiling module or_gate
+# 
+# Top level modules:
+# 	or_gate
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sar.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sar.sv 
+# -- Compiling module sar
+# 
+# Top level modules:
+# 	sar
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sc.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sc.sv 
+# -- Compiling module sc
+# 
+# Top level modules:
+# 	sc
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sll.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sll.sv 
+# -- Compiling module sll
+# 
+# Top level modules:
+# 	sll
+# End time: 17:28:27 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/slr.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:27 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/slr.sv 
+# -- Compiling module slr
+# 
+# Top level modules:
+# 	slr
+# End time: 17:28:28 on Nov 19,2019, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/xor_gate.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:28 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/xor_gate.sv 
+# -- Compiling module xor_gate
+# 
+# Top level modules:
+# 	xor_gate
+# End time: 17:28:28 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/FlipFlop.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:28 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/FlipFlop.sv 
+# -- Compiling module FlipFlop
+# 
+# Top level modules:
+# 	FlipFlop
+# End time: 17:28:28 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bankReg.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:28 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bankReg.sv 
+# -- Compiling module bankReg
+# 
+# Top level modules:
+# 	bankReg
+# End time: 17:28:28 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/topTB.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:28 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/topTB.sv 
+# -- Compiling module topTB
+# 
+# Top level modules:
+# 	topTB
+# End time: 17:28:28 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/instructionMem.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:28:28 on Nov 19,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor" C:/Users/user/Downloads/MinComputerARMv4-master/Processor/instructionMem.sv 
+# -- Compiling module instructionMem
+# 
+# Top level modules:
+# 	instructionMem
+# End time: 17:28:28 on Nov 19,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vsim work.topTB
+# vsim work.topTB 
+# Start time: 17:28:32 on Nov 19,2019
+# Loading sv_std.std
+# Loading work.topTB
+# Loading work.top
+# Loading work.ARMStruct
+# Loading work.ControlUnit
+# Loading work.decoder
+# Loading work.condLogic
+# Loading work.FlipFlop
+# Loading work.condCheck
+# Loading work.datapath
+# Loading work.mux2x1_nBits
+# Loading work.fulladder
+# Loading work.bankReg
+# Loading work.bitextender
+# Loading work.ALU
+# Loading work.and_gate
+# Loading work.or_gate
+# Loading work.xor_gate
+# Loading work.mux_not
+# Loading work.slr
+# Loading work.sll
+# Loading work.mux_result
+# Loading work.flag_generator
+# Loading work.sar
+# Loading work.sc
+# Loading work.instructionMem
+# Loading work.addressingDecoder
+# Loading work.dataMem
+# Loading work.EnemiesRegister
+# Loading work.BombRegister
+add wave -position end  sim:/topTB/clk
+add wave -position end  sim:/topTB/reset
+add wave -position end  sim:/topTB/WriteData
+add wave -position end  sim:/topTB/DataAdr
+add wave -position end  sim:/topTB/MemWrite
+run 1000
