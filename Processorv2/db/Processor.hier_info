@@ -3,103 +3,103 @@ clk => clk.IN4
 ps2_clk => ps2_clk.IN1
 reset => reset.IN1
 data => data.IN1
-WriteData[0] <= WriteData[0].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[1] <= WriteData[1].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[2] <= WriteData[2].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[3] <= WriteData[3].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[4] <= WriteData[4].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[5] <= WriteData[5].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[6] <= WriteData[6].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[7] <= WriteData[7].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[8] <= WriteData[8].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[9] <= WriteData[9].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[10] <= WriteData[10].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[11] <= WriteData[11].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[12] <= WriteData[12].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[13] <= WriteData[13].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[14] <= WriteData[14].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[15] <= WriteData[15].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[16] <= WriteData[16].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[17] <= WriteData[17].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[18] <= WriteData[18].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[19] <= WriteData[19].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[20] <= WriteData[20].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[21] <= WriteData[21].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[22] <= WriteData[22].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[23] <= WriteData[23].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[24] <= WriteData[24].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[25] <= WriteData[25].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[26] <= WriteData[26].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[27] <= WriteData[27].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[28] <= WriteData[28].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[29] <= WriteData[29].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[30] <= WriteData[30].DB_MAX_OUTPUT_PORT_TYPE
-WriteData[31] <= WriteData[31].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[0] <= DataAdr[0].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[1] <= DataAdr[1].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[2] <= DataAdr[2].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[3] <= DataAdr[3].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[4] <= DataAdr[4].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[5] <= DataAdr[5].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[6] <= DataAdr[6].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[7] <= DataAdr[7].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[8] <= DataAdr[8].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[9] <= DataAdr[9].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[10] <= DataAdr[10].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[11] <= DataAdr[11].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[12] <= DataAdr[12].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[13] <= DataAdr[13].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[14] <= DataAdr[14].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[15] <= DataAdr[15].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[16] <= DataAdr[16].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[17] <= DataAdr[17].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[18] <= DataAdr[18].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[19] <= DataAdr[19].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[20] <= DataAdr[20].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[21] <= DataAdr[21].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[22] <= DataAdr[22].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[23] <= DataAdr[23].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[24] <= DataAdr[24].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[25] <= DataAdr[25].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[26] <= DataAdr[26].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[27] <= DataAdr[27].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[28] <= DataAdr[28].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[29] <= DataAdr[29].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[30] <= DataAdr[30].DB_MAX_OUTPUT_PORT_TYPE
-DataAdr[31] <= DataAdr[31].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[0] <= PC[0].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[1] <= PC[1].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[2] <= PC[2].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[3] <= PC[3].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[4] <= PC[4].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[5] <= PC[5].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[6] <= PC[6].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[7] <= PC[7].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[8] <= PC[8].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[9] <= PC[9].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[10] <= PC[10].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[11] <= PC[11].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[12] <= PC[12].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[13] <= PC[13].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[14] <= PC[14].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[15] <= PC[15].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[16] <= PC[16].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[17] <= PC[17].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[18] <= PC[18].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[19] <= PC[19].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[20] <= PC[20].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[21] <= PC[21].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[22] <= PC[22].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[23] <= PC[23].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[24] <= PC[24].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[25] <= PC[25].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[26] <= PC[26].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[27] <= PC[27].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[28] <= PC[28].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[29] <= PC[29].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[30] <= PC[30].DB_MAX_OUTPUT_PORT_TYPE
-PC_out[31] <= PC[31].DB_MAX_OUTPUT_PORT_TYPE
-MemWrite <= MemWrite.DB_MAX_OUTPUT_PORT_TYPE
+WriteData[0] << WriteData[0].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[1] << WriteData[1].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[2] << WriteData[2].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[3] << WriteData[3].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[4] << WriteData[4].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[5] << WriteData[5].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[6] << WriteData[6].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[7] << WriteData[7].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[8] << WriteData[8].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[9] << WriteData[9].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[10] << WriteData[10].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[11] << WriteData[11].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[12] << WriteData[12].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[13] << WriteData[13].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[14] << WriteData[14].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[15] << WriteData[15].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[16] << WriteData[16].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[17] << WriteData[17].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[18] << WriteData[18].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[19] << WriteData[19].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[20] << WriteData[20].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[21] << WriteData[21].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[22] << WriteData[22].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[23] << WriteData[23].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[24] << WriteData[24].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[25] << WriteData[25].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[26] << WriteData[26].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[27] << WriteData[27].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[28] << WriteData[28].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[29] << WriteData[29].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[30] << WriteData[30].DB_MAX_OUTPUT_PORT_TYPE
+WriteData[31] << WriteData[31].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[0] << DataAdr[0].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[1] << DataAdr[1].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[2] << DataAdr[2].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[3] << DataAdr[3].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[4] << DataAdr[4].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[5] << DataAdr[5].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[6] << DataAdr[6].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[7] << DataAdr[7].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[8] << DataAdr[8].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[9] << DataAdr[9].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[10] << DataAdr[10].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[11] << DataAdr[11].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[12] << DataAdr[12].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[13] << DataAdr[13].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[14] << DataAdr[14].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[15] << DataAdr[15].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[16] << DataAdr[16].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[17] << DataAdr[17].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[18] << DataAdr[18].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[19] << DataAdr[19].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[20] << DataAdr[20].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[21] << DataAdr[21].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[22] << DataAdr[22].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[23] << DataAdr[23].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[24] << DataAdr[24].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[25] << DataAdr[25].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[26] << DataAdr[26].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[27] << DataAdr[27].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[28] << DataAdr[28].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[29] << DataAdr[29].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[30] << DataAdr[30].DB_MAX_OUTPUT_PORT_TYPE
+DataAdr[31] << DataAdr[31].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[0] << PC[0].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[1] << PC[1].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[2] << PC[2].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[3] << PC[3].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[4] << PC[4].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[5] << PC[5].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[6] << PC[6].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[7] << PC[7].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[8] << PC[8].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[9] << PC[9].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[10] << PC[10].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[11] << PC[11].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[12] << PC[12].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[13] << PC[13].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[14] << PC[14].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[15] << PC[15].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[16] << PC[16].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[17] << PC[17].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[18] << PC[18].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[19] << PC[19].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[20] << PC[20].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[21] << PC[21].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[22] << PC[22].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[23] << PC[23].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[24] << PC[24].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[25] << PC[25].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[26] << PC[26].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[27] << PC[27].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[28] << PC[28].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[29] << PC[29].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[30] << PC[30].DB_MAX_OUTPUT_PORT_TYPE
+PC_out[31] << PC[31].DB_MAX_OUTPUT_PORT_TYPE
+MemWrite << MemWrite.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|ARMStruct:arm
@@ -1905,104 +1905,104 @@ NZCV[3] <= mux2x1_nBits:m1.port3
 
 
 |top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit
-a[0] => a[0].IN1
-a[1] => a[1].IN1
-a[2] => a[2].IN1
-a[3] => a[3].IN1
-a[4] => a[4].IN1
-a[5] => a[5].IN1
-a[6] => a[6].IN1
-a[7] => a[7].IN1
-a[8] => a[8].IN1
-a[9] => a[9].IN1
-a[10] => a[10].IN1
-a[11] => a[11].IN1
-a[12] => a[12].IN1
-a[13] => a[13].IN1
-a[14] => a[14].IN1
-a[15] => a[15].IN1
-a[16] => a[16].IN1
-a[17] => a[17].IN1
-a[18] => a[18].IN1
-a[19] => a[19].IN1
-a[20] => a[20].IN1
-a[21] => a[21].IN1
-a[22] => a[22].IN1
-a[23] => a[23].IN1
-a[24] => a[24].IN1
-a[25] => a[25].IN1
-a[26] => a[26].IN1
-a[27] => a[27].IN1
-a[28] => a[28].IN1
-a[29] => a[29].IN1
-a[30] => a[30].IN1
-a[31] => a[31].IN1
-b[0] => ~NO_FANOUT~
-b[1] => ~NO_FANOUT~
-b[2] => ~NO_FANOUT~
-b[3] => ~NO_FANOUT~
-b[4] => ~NO_FANOUT~
-b[5] => ~NO_FANOUT~
-b[6] => ~NO_FANOUT~
-b[7] => ~NO_FANOUT~
-b[8] => ~NO_FANOUT~
-b[9] => ~NO_FANOUT~
-b[10] => ~NO_FANOUT~
-b[11] => ~NO_FANOUT~
-b[12] => ~NO_FANOUT~
-b[13] => ~NO_FANOUT~
-b[14] => ~NO_FANOUT~
-b[15] => ~NO_FANOUT~
-b[16] => ~NO_FANOUT~
-b[17] => ~NO_FANOUT~
-b[18] => ~NO_FANOUT~
-b[19] => ~NO_FANOUT~
-b[20] => ~NO_FANOUT~
-b[21] => ~NO_FANOUT~
-b[22] => ~NO_FANOUT~
-b[23] => ~NO_FANOUT~
-b[24] => ~NO_FANOUT~
-b[25] => ~NO_FANOUT~
-b[26] => ~NO_FANOUT~
-b[27] => ~NO_FANOUT~
-b[28] => ~NO_FANOUT~
-b[29] => ~NO_FANOUT~
-b[30] => ~NO_FANOUT~
-b[31] => ~NO_FANOUT~
+a[0] => a[0].IN2
+a[1] => a[1].IN2
+a[2] => a[2].IN2
+a[3] => a[3].IN2
+a[4] => a[4].IN2
+a[5] => a[5].IN2
+a[6] => a[6].IN2
+a[7] => a[7].IN2
+a[8] => a[8].IN2
+a[9] => a[9].IN2
+a[10] => a[10].IN2
+a[11] => a[11].IN2
+a[12] => a[12].IN2
+a[13] => a[13].IN2
+a[14] => a[14].IN2
+a[15] => a[15].IN2
+a[16] => a[16].IN2
+a[17] => a[17].IN2
+a[18] => a[18].IN2
+a[19] => a[19].IN2
+a[20] => a[20].IN2
+a[21] => a[21].IN2
+a[22] => a[22].IN2
+a[23] => a[23].IN2
+a[24] => a[24].IN2
+a[25] => a[25].IN2
+a[26] => a[26].IN2
+a[27] => a[27].IN2
+a[28] => a[28].IN2
+a[29] => a[29].IN2
+a[30] => a[30].IN2
+a[31] => a[31].IN2
+b[0] => b[0].IN2
+b[1] => b[1].IN2
+b[2] => b[2].IN2
+b[3] => b[3].IN2
+b[4] => b[4].IN2
+b[5] => b[5].IN2
+b[6] => b[6].IN2
+b[7] => b[7].IN2
+b[8] => b[8].IN2
+b[9] => b[9].IN2
+b[10] => b[10].IN2
+b[11] => b[11].IN2
+b[12] => b[12].IN2
+b[13] => b[13].IN2
+b[14] => b[14].IN2
+b[15] => b[15].IN2
+b[16] => b[16].IN2
+b[17] => b[17].IN2
+b[18] => b[18].IN2
+b[19] => b[19].IN2
+b[20] => b[20].IN2
+b[21] => b[21].IN2
+b[22] => b[22].IN2
+b[23] => b[23].IN2
+b[24] => b[24].IN2
+b[25] => b[25].IN2
+b[26] => b[26].IN2
+b[27] => b[27].IN2
+b[28] => b[28].IN2
+b[29] => b[29].IN2
+b[30] => b[30].IN2
+b[31] => b[31].IN2
 ALUControl => ALUControl.IN2
-Y_CB <= mux2x1_nBits:m2.port0
-Y[0] <= mux2x1_nBits:m1.port0
-Y[1] <= mux2x1_nBits:m1.port0
-Y[2] <= mux2x1_nBits:m1.port0
-Y[3] <= mux2x1_nBits:m1.port0
-Y[4] <= mux2x1_nBits:m1.port0
-Y[5] <= mux2x1_nBits:m1.port0
-Y[6] <= mux2x1_nBits:m1.port0
-Y[7] <= mux2x1_nBits:m1.port0
-Y[8] <= mux2x1_nBits:m1.port0
-Y[9] <= mux2x1_nBits:m1.port0
-Y[10] <= mux2x1_nBits:m1.port0
-Y[11] <= mux2x1_nBits:m1.port0
-Y[12] <= mux2x1_nBits:m1.port0
-Y[13] <= mux2x1_nBits:m1.port0
-Y[14] <= mux2x1_nBits:m1.port0
-Y[15] <= mux2x1_nBits:m1.port0
-Y[16] <= mux2x1_nBits:m1.port0
-Y[17] <= mux2x1_nBits:m1.port0
-Y[18] <= mux2x1_nBits:m1.port0
-Y[19] <= mux2x1_nBits:m1.port0
-Y[20] <= mux2x1_nBits:m1.port0
-Y[21] <= mux2x1_nBits:m1.port0
-Y[22] <= mux2x1_nBits:m1.port0
-Y[23] <= mux2x1_nBits:m1.port0
-Y[24] <= mux2x1_nBits:m1.port0
-Y[25] <= mux2x1_nBits:m1.port0
-Y[26] <= mux2x1_nBits:m1.port0
-Y[27] <= mux2x1_nBits:m1.port0
-Y[28] <= mux2x1_nBits:m1.port0
-Y[29] <= mux2x1_nBits:m1.port0
-Y[30] <= mux2x1_nBits:m1.port0
-Y[31] <= mux2x1_nBits:m1.port0
+Y_CB <= mux2x1_nBits:m2.port3
+Y[0] <= mux2x1_nBits:m1.port3
+Y[1] <= mux2x1_nBits:m1.port3
+Y[2] <= mux2x1_nBits:m1.port3
+Y[3] <= mux2x1_nBits:m1.port3
+Y[4] <= mux2x1_nBits:m1.port3
+Y[5] <= mux2x1_nBits:m1.port3
+Y[6] <= mux2x1_nBits:m1.port3
+Y[7] <= mux2x1_nBits:m1.port3
+Y[8] <= mux2x1_nBits:m1.port3
+Y[9] <= mux2x1_nBits:m1.port3
+Y[10] <= mux2x1_nBits:m1.port3
+Y[11] <= mux2x1_nBits:m1.port3
+Y[12] <= mux2x1_nBits:m1.port3
+Y[13] <= mux2x1_nBits:m1.port3
+Y[14] <= mux2x1_nBits:m1.port3
+Y[15] <= mux2x1_nBits:m1.port3
+Y[16] <= mux2x1_nBits:m1.port3
+Y[17] <= mux2x1_nBits:m1.port3
+Y[18] <= mux2x1_nBits:m1.port3
+Y[19] <= mux2x1_nBits:m1.port3
+Y[20] <= mux2x1_nBits:m1.port3
+Y[21] <= mux2x1_nBits:m1.port3
+Y[22] <= mux2x1_nBits:m1.port3
+Y[23] <= mux2x1_nBits:m1.port3
+Y[24] <= mux2x1_nBits:m1.port3
+Y[25] <= mux2x1_nBits:m1.port3
+Y[26] <= mux2x1_nBits:m1.port3
+Y[27] <= mux2x1_nBits:m1.port3
+Y[28] <= mux2x1_nBits:m1.port3
+Y[29] <= mux2x1_nBits:m1.port3
+Y[30] <= mux2x1_nBits:m1.port3
+Y[31] <= mux2x1_nBits:m1.port3
 
 
 |top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|fulladder:fulladder_module
@@ -2104,6 +2104,555 @@ sum[29] <= _.SUM_OUT
 sum[30] <= _.SUM_OUT
 sum[31] <= _.SUM_OUT
 cout <= _.SUM_OUT
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+A[4] => A[4].IN1
+A[5] => A[5].IN1
+A[6] => A[6].IN1
+A[7] => A[7].IN1
+A[8] => A[8].IN1
+A[9] => A[9].IN1
+A[10] => A[10].IN1
+A[11] => A[11].IN1
+A[12] => A[12].IN1
+A[13] => A[13].IN1
+A[14] => A[14].IN1
+A[15] => A[15].IN1
+A[16] => A[16].IN1
+A[17] => A[17].IN1
+A[18] => A[18].IN1
+A[19] => A[19].IN1
+A[20] => A[20].IN1
+A[21] => A[21].IN1
+A[22] => A[22].IN1
+A[23] => A[23].IN1
+A[24] => A[24].IN1
+A[25] => A[25].IN1
+A[26] => A[26].IN1
+A[27] => A[27].IN1
+A[28] => A[28].IN1
+A[29] => A[29].IN1
+A[30] => A[30].IN1
+A[31] => A[31].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+B[4] => B[4].IN1
+B[5] => B[5].IN1
+B[6] => B[6].IN1
+B[7] => B[7].IN1
+B[8] => B[8].IN1
+B[9] => B[9].IN1
+B[10] => B[10].IN1
+B[11] => B[11].IN1
+B[12] => B[12].IN1
+B[13] => B[13].IN1
+B[14] => B[14].IN1
+B[15] => B[15].IN1
+B[16] => B[16].IN1
+B[17] => B[17].IN1
+B[18] => B[18].IN1
+B[19] => B[19].IN1
+B[20] => B[20].IN1
+B[21] => B[21].IN1
+B[22] => B[22].IN1
+B[23] => B[23].IN1
+B[24] => B[24].IN1
+B[25] => B[25].IN1
+B[26] => B[26].IN1
+B[27] => B[27].IN1
+B[28] => B[28].IN1
+B[29] => B[29].IN1
+B[30] => B[30].IN1
+B[31] => B[31].IN1
+Bin => borrows[0].IN1
+Bout <= Substractor:foorloop[31].fs1.port3
+R[0] <= Substractor:foorloop[0].fs1.port4
+R[1] <= Substractor:foorloop[1].fs1.port4
+R[2] <= Substractor:foorloop[2].fs1.port4
+R[3] <= Substractor:foorloop[3].fs1.port4
+R[4] <= Substractor:foorloop[4].fs1.port4
+R[5] <= Substractor:foorloop[5].fs1.port4
+R[6] <= Substractor:foorloop[6].fs1.port4
+R[7] <= Substractor:foorloop[7].fs1.port4
+R[8] <= Substractor:foorloop[8].fs1.port4
+R[9] <= Substractor:foorloop[9].fs1.port4
+R[10] <= Substractor:foorloop[10].fs1.port4
+R[11] <= Substractor:foorloop[11].fs1.port4
+R[12] <= Substractor:foorloop[12].fs1.port4
+R[13] <= Substractor:foorloop[13].fs1.port4
+R[14] <= Substractor:foorloop[14].fs1.port4
+R[15] <= Substractor:foorloop[15].fs1.port4
+R[16] <= Substractor:foorloop[16].fs1.port4
+R[17] <= Substractor:foorloop[17].fs1.port4
+R[18] <= Substractor:foorloop[18].fs1.port4
+R[19] <= Substractor:foorloop[19].fs1.port4
+R[20] <= Substractor:foorloop[20].fs1.port4
+R[21] <= Substractor:foorloop[21].fs1.port4
+R[22] <= Substractor:foorloop[22].fs1.port4
+R[23] <= Substractor:foorloop[23].fs1.port4
+R[24] <= Substractor:foorloop[24].fs1.port4
+R[25] <= Substractor:foorloop[25].fs1.port4
+R[26] <= Substractor:foorloop[26].fs1.port4
+R[27] <= Substractor:foorloop[27].fs1.port4
+R[28] <= Substractor:foorloop[28].fs1.port4
+R[29] <= Substractor:foorloop[29].fs1.port4
+R[30] <= Substractor:foorloop[30].fs1.port4
+R[31] <= Substractor:foorloop[31].fs1.port4
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[0].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[1].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[2].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[3].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[4].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[5].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[6].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[7].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[8].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[9].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[10].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[11].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[12].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[13].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[14].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[15].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[16].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[17].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[18].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[19].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[20].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[21].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[22].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[23].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[24].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[25].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[26].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[27].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[28].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[29].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[30].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|Substractor_nBits:sub|Substractor:foorloop[31].fs1
+X1 => u1.IN0
+X1 => u2.IN0
+X1 => u3.IN0
+X2 => u1.IN1
+X2 => u2.IN1
+X2 => u4.IN0
+Cin => u6.IN1
+Cin => u3.IN1
+Cin => u4.IN1
+Cout <= u5.DB_MAX_OUTPUT_PORT_TYPE
+S <= u6.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top|ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m1
@@ -2309,9 +2858,9 @@ b[28] => b[28].IN7
 b[29] => b[29].IN7
 b[30] => b[30].IN7
 b[31] => b[31].IN7
-ALUControl[0] => ALUControl[0].IN2
-ALUControl[1] => ALUControl[1].IN2
-ALUControl[2] => ALUControl[2].IN2
+ALUControl[0] => ALUControlT[0].IN2
+ALUControl[1] => ALUControlT[1].IN1
+ALUControl[2] => ALUControlT[2].IN1
 result[0] <= mux_result:mux_result_module.port9
 result[1] <= mux_result:mux_result_module.port9
 result[2] <= mux_result:mux_result_module.port9

@@ -1,5 +1,5 @@
 module Substractor(input X1, X2, Cin, 
-						 output S, Cout);  
+						 output Cout, S);  
 	
 	logic a1, a2, a3, a4;
 	logic notX1;
@@ -16,3 +16,4 @@ module Substractor(input X1, X2, Cin,
 	or u5(Cout,a4,a2,a3);
 	
 endmodule
+
