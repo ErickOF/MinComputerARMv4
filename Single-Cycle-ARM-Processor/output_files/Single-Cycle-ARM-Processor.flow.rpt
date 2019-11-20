@@ -1,5 +1,5 @@
 Flow report for Single-Cycle-ARM-Processor
-Wed Nov 20 08:34:12 2019
+Wed Nov 20 10:30:27 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 20 08:34:11 2019       ;
+; Flow Status                     ; Successful - Wed Nov 20 10:30:27 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Single-Cycle-ARM-Processor                  ;
 ; Top-level Entity Name           ; processor                                   ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+----------------------------+
 ; Option            ; Setting                    ;
 +-------------------+----------------------------+
-; Start date & time ; 11/20/2019 08:33:42        ;
+; Start date & time ; 11/20/2019 10:30:05        ;
 ; Main task         ; Compilation                ;
 ; Revision Name     ; Single-Cycle-ARM-Processor ;
 +-------------------+----------------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+----------------------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value              ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+----------------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 97351243532289.157426042109576         ; --                         ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 97351243532289.157426740513548         ; --                         ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --                         ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim (Verilog)                     ; <None>                     ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                   ; --                         ; --          ; eda_simulation ;
@@ -99,8 +99,8 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4855 MB             ; 00:00:52                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:52                           ;
+; Analysis & Synthesis ; 00:00:22     ; 1.0                     ; 4857 MB             ; 00:00:31                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:31                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
