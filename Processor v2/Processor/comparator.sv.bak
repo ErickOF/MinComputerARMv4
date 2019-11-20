@@ -1,0 +1,21 @@
+module comparator #(parameter N=12) (input [N-1:0] counter, cons,
+												 output Cout,
+												 output [N-1:0] S); 
+	logic [N-1:0] carr;
+	assign carr[0]=0;
+	genvar i;
+	
+	generate
+		for (i=0; i<N ; i++)begin :forloop
+			if(i==N-1) begin
+				Restador i1(counter[i],cons[i],carr[i],S[i],Cout);
+			end
+			else begin
+				Restador i2(counter[i],cons[i],carr[i],S[i],carr[i+1]);
+			end
+
+		end
+		
+	endgenerate
+
+endmodule

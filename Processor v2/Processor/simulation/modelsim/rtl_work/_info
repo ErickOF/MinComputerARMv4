@@ -1,0 +1,749 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/user/Downloads/MinComputerARMv4-master/Processor/simulation/modelsim
+vaddressingDecoder
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1574206106
+!i10b 1
+!s100 7Jc8P:z85;2K_1]]Mk9`M2
+I^X2aIL?JQT_=_T6;n;KgC3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 addressingDecoder_sv_unit
+S1
+R0
+Z4 w1573880134
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/addressingDecoder.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/addressingDecoder.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1574206106.000000
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/addressingDecoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/addressingDecoder.sv|
+!i113 1
+Z7 o-sv -work work
+Z8 !s92 -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor
+Z9 tCvgOpt 0
+naddressing@decoder
+vALU
+R1
+Z10 !s110 1574206107
+!i10b 1
+!s100 O1Gmjz@2FXdo8TF7<K;Mb3
+IRC^JkEELK<H12Zan3SNSi1
+R3
+!s105 ALU_sv_unit
+S1
+R0
+Z11 w1574201989
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ALU.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/ALU.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z12 !s108 1574206107.000000
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ALU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ALU.sv|
+!i113 1
+R7
+R8
+R9
+n@a@l@u
+vand_gate
+R1
+R10
+!i10b 1
+!s100 R^:D[ZlfJV6COioX:`K311
+Ida^XVF18Sbd:<H`UIf7bk0
+R3
+!s105 and_gate_sv_unit
+S1
+R0
+w1574201988
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/and_gate.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/and_gate.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/and_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/and_gate.sv|
+!i113 1
+R7
+R8
+R9
+vARMStruct
+R1
+R2
+!i10b 1
+!s100 12cj6ZH7JkS?gE0i>bNBe0
+I7O1fFE7Q8PX81:Zl@915h2
+R3
+!s105 ARMStruct_sv_unit
+S1
+R0
+w1574204537
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ARMStruct.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/ARMStruct.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ARMStruct.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ARMStruct.sv|
+!i113 1
+R7
+R8
+R9
+n@a@r@m@struct
+vbankReg
+R1
+Z13 !s110 1574206108
+!i10b 1
+!s100 RSNFVfFHc`>J3BLVKXF1:3
+I9Gj^nXSfkL6=eC^QEc?7T2
+R3
+!s105 bankReg_sv_unit
+S1
+R0
+w1574195970
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bankReg.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/bankReg.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z14 !s108 1574206108.000000
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bankReg.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bankReg.sv|
+!i113 1
+R7
+R8
+R9
+nbank@reg
+vbitextender
+R1
+R2
+!i10b 1
+!s100 d0?4WESz9h_^caf>H;i[E0
+IAdUR`8`:nF^Oo:4jKEgX>0
+R3
+!s105 bitextender_sv_unit
+S1
+R0
+R4
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bitextender.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/bitextender.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bitextender.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bitextender.sv|
+!i113 1
+R7
+R8
+R9
+vBombRegister
+R1
+R2
+!i10b 1
+!s100 [04=P4C81GW6]b1mEdXmI3
+I`_F0=mZWOM;kODbQ0SN2Y2
+R3
+!s105 BombRegister_sv_unit
+S1
+R0
+R4
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/BombRegister.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/BombRegister.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/BombRegister.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/BombRegister.sv|
+!i113 1
+R7
+R8
+R9
+n@bomb@register
+vcondCheck
+R1
+R2
+!i10b 1
+!s100 ?X3c;[W3hVaGJU2aL1n_A2
+I5;fLiBN]0locLZ?MD>RH70
+R3
+!s105 condCheck_sv_unit
+S1
+R0
+R4
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condCheck.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/condCheck.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condCheck.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condCheck.sv|
+!i113 1
+R7
+R8
+R9
+ncond@check
+vcondLogic
+R1
+R2
+!i10b 1
+!s100 GJe<VYz0^4Sj98?VC>TXj0
+IOXhTX=k8]kme_SeS9IS8Z2
+R3
+!s105 condLogic_sv_unit
+S1
+R0
+w1574198121
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condLogic.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/condLogic.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condLogic.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condLogic.sv|
+!i113 1
+R7
+R8
+R9
+ncond@logic
+vControlUnit
+R1
+R2
+!i10b 1
+!s100 R08ET;iPE4_JJmColeJc80
+Ia:d3ILPi6BV<EUci=mom;1
+R3
+!s105 ControlUnit_sv_unit
+S1
+R0
+w1574204999
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ControlUnit.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/ControlUnit.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ControlUnit.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ControlUnit.sv|
+!i113 1
+R7
+R8
+R9
+n@control@unit
+vdataMem
+R1
+R2
+!i10b 1
+!s100 RAN_3D9@e4d;8Qb`hZG9P0
+I;[@C[LR0jS@AmkZcJY=?P0
+R3
+!s105 dataMem_sv_unit
+S1
+R0
+w1574193352
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/dataMem.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/dataMem.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/dataMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/dataMem.sv|
+!i113 1
+R7
+R8
+R9
+ndata@mem
+vdatapath
+R1
+R10
+!i10b 1
+!s100 7=EYHGE_U]]bVJBoh]P[42
+IAC?m9[XgK2aVdldVY[2IE2
+R3
+!s105 datapath_sv_unit
+S1
+R0
+w1574205387
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/datapath.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/datapath.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/datapath.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/datapath.sv|
+!i113 1
+R7
+R8
+R9
+vdecoder
+R1
+R2
+!i10b 1
+!s100 MT=eSC<eT=8]@XHQ8S15[2
+IN00iKO6=0Km6EG@?dQVQ@1
+R3
+!s105 decoder_sv_unit
+S1
+R0
+w1574204567
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/decoder.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/decoder.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/decoder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/decoder.sv|
+!i113 1
+R7
+R8
+R9
+vEnemiesRegister
+R1
+R2
+!i10b 1
+!s100 ZYz>F0P2gK5O7kAa]3Kio1
+In[8;1_K]99ADO`8]cPSWC0
+R3
+!s105 EnemiesRegister_sv_unit
+S1
+R0
+w1574193274
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/EnemiesRegister.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/EnemiesRegister.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/EnemiesRegister.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/EnemiesRegister.sv|
+!i113 1
+R7
+R8
+R9
+n@enemies@register
+vflag_generator
+R1
+Z15 !s110 1574206105
+!i10b 1
+!s100 3>V_=iJ_EWY3YPC09V1;z1
+I5XZi=f<TVR?[UN9Bac`jK3
+R3
+!s105 flag_generator_sv_unit
+S1
+R0
+w1574201414
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/flag_generator.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/flag_generator.sv
+L0 1
+R5
+r1
+!s85 0
+31
+Z16 !s108 1574206105.000000
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/flag_generator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/flag_generator.sv|
+!i113 1
+R7
+R8
+R9
+vFlipFlop
+R1
+R13
+!i10b 1
+!s100 L8i<TLA3GUBbkFngQB?IS3
+I>6^GJX5T1bgSL3?ZPfMhn0
+R3
+!s105 FlipFlop_sv_unit
+S1
+R0
+R4
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/FlipFlop.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/FlipFlop.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/FlipFlop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/FlipFlop.sv|
+!i113 1
+R7
+R8
+R9
+n@flip@flop
+vfulladder
+R1
+R10
+!i10b 1
+!s100 _AmcQ6l9UG`10KPC]K]RG2
+IoM:iom0JHcO`b>fUOBdf]0
+R3
+!s105 fulladder_sv_unit
+S1
+R0
+w1574201833
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/fulladder.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/fulladder.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/fulladder.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/fulladder.sv|
+!i113 1
+R7
+R8
+R9
+vinstructionMem
+R1
+R13
+!i10b 1
+!s100 T5?oCH34cYQdN>mFB9Bo:1
+II_=BVEU;H3OfQMkf^^ALi3
+R3
+!s105 instructionMem_sv_unit
+S1
+R0
+w1574204676
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/instructionMem.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/instructionMem.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/instructionMem.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/instructionMem.sv|
+!i113 1
+R7
+R8
+R9
+ninstruction@mem
+vmux2x1_nBits
+R1
+R10
+!i10b 1
+!s100 Y`FkKFc`Aa@29fS=<``NK2
+IWT=9`QUa`_FEKb43Qjdi=2
+R3
+!s105 mux2x1_nBits_sv_unit
+S1
+R0
+w1574205238
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1_nBits.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1_nBits.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1_nBits.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1_nBits.sv|
+!i113 1
+R7
+R8
+R9
+nmux2x1_n@bits
+vmux_not
+R1
+R10
+!i10b 1
+!s100 ?`QGNQYE>8DFT7KEO7S:O3
+I[Cgmo3EblZldJKTo]eB4Y1
+R3
+!s105 mux_not_sv_unit
+S1
+R0
+w1574201340
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_not.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_not.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_not.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_not.sv|
+!i113 1
+R7
+R8
+R9
+vmux_result
+R1
+R10
+!i10b 1
+!s100 id28`3ielY:Li2D7AU0Ja3
+IHO1V_7WK<TSXMY^d94GaT3
+R3
+!s105 mux_result_sv_unit
+S1
+R0
+w1574201415
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_result.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_result.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_result.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_result.sv|
+!i113 1
+R7
+R8
+R9
+vor_gate
+R1
+R10
+!i10b 1
+!s100 YgX9zIRigLDYgXW6BSi;^2
+IThZgN>S6j`9T`cY=?O5m82
+R3
+!s105 or_gate_sv_unit
+S1
+R0
+Z17 w1574201416
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/or_gate.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/or_gate.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/or_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/or_gate.sv|
+!i113 1
+R7
+R8
+R9
+vsar
+R1
+R10
+!i10b 1
+!s100 Rm8n96D==O[NKZEUIHJ881
+ICBa=1[oo>;;cm[P?X;AXH0
+R3
+!s105 sar_sv_unit
+S1
+R0
+R17
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sar.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/sar.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sar.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sar.sv|
+!i113 1
+R7
+R8
+R9
+vsc
+R1
+R10
+!i10b 1
+!s100 P=Ng>[9Rl2`=[g]Njf^Ai3
+IV0LGnIEgTcDFQQ=Xlo?nK0
+R3
+!s105 sc_sv_unit
+S1
+R0
+w1574204626
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sc.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/sc.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sc.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sc.sv|
+!i113 1
+R7
+R8
+R9
+vsll
+R1
+R10
+!i10b 1
+!s100 L@Y^?TNNoAL>oUcTlP1Ji0
+I`=DM`[^Uz[Z@SY4=3;I813
+R3
+!s105 sll_sv_unit
+S1
+R0
+Z18 w1574201418
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sll.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/sll.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sll.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sll.sv|
+!i113 1
+R7
+R8
+R9
+vslr
+R1
+R13
+!i10b 1
+!s100 >o>>L[SPVA_aL2F890e[D0
+IGLZJDcn7W9AYmHDYDHJ3?3
+R3
+!s105 slr_sv_unit
+S1
+R0
+R18
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/slr.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/slr.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R12
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/slr.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/slr.sv|
+!i113 1
+R7
+R8
+R9
+vtop
+R1
+R15
+!i10b 1
+!s100 Y1XK:jPV^3^_^N110=`2D0
+IhU3zG_cD^6LAjc>OYgWcV1
+R3
+!s105 top_sv_unit
+S1
+R0
+w1574206079
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/top.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/top.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R16
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/top.sv|
+!i113 1
+R7
+R8
+R9
+vtopTB
+R1
+R13
+!i10b 1
+!s100 Wf2z15[K=N]1[0_c9?GFF1
+Ie[J54hjVaQdE[@JR3niMh0
+R3
+!s105 topTB_sv_unit
+S1
+R0
+w1574203051
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/topTB.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/topTB.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/topTB.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/topTB.sv|
+!i113 1
+R7
+R8
+R9
+ntop@t@b
+vxor_gate
+R1
+R13
+!i10b 1
+!s100 AeR>Jb;HL_2mH6f:J4VLd1
+I3KlOc[5M8Um=cMm<Y94f]2
+R3
+!s105 xor_gate_sv_unit
+S1
+R0
+R11
+8C:/Users/user/Downloads/MinComputerARMv4-master/Processor/xor_gate.sv
+FC:/Users/user/Downloads/MinComputerARMv4-master/Processor/xor_gate.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R14
+!s107 C:/Users/user/Downloads/MinComputerARMv4-master/Processor/xor_gate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor|C:/Users/user/Downloads/MinComputerARMv4-master/Processor/xor_gate.sv|
+!i113 1
+R7
+R8
+R9

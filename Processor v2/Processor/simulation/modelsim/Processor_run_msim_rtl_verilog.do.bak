@@ -1,0 +1,38 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/top.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/flag_generator.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/EnemiesRegister.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/dataMem.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ControlUnit.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condLogic.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/condCheck.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/BombRegister.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ARMStruct.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/addressingDecoder.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/instructionMem.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bitextender.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/decoder.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/datapath.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/fulladder.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1_nBits.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux2x1.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/ALU.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/and_gate.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_not.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/mux_result.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/or_gate.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sar.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sc.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/sll.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/slr.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/xor_gate.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/FlipFlop.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/bankReg.sv}
+vlog -sv -work work +incdir+C:/Users/user/Downloads/MinComputerARMv4-master/Processor {C:/Users/user/Downloads/MinComputerARMv4-master/Processor/topTB.sv}
+
