@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at vertical_counter.sv(13): always construct contains both blocking and non-blocking assignments File: D:/Work Files/Proyecto_Taller/vertical_counter.sv Line: 13
+Info (10281): Verilog HDL Declaration information at vga_signal.sv(2): object "h_sync" differs only in case from object "H_SYNC" in the same scope File: D:/Work Files/Proyecto_Taller/vga_signal.sv Line: 2
+Info (10281): Verilog HDL Declaration information at vga_signal.sv(2): object "v_sync" differs only in case from object "V_SYNC" in the same scope File: D:/Work Files/Proyecto_Taller/vga_signal.sv Line: 2

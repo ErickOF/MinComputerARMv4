@@ -1,0 +1,43 @@
+|vertical_counter
+clk => v_count[0].CLK
+clk => v_count[1].CLK
+clk => v_count[2].CLK
+clk => v_count[3].CLK
+clk => v_count[4].CLK
+clk => v_count[5].CLK
+clk => v_count[6].CLK
+clk => v_count[7].CLK
+clk => v_count[8].CLK
+clk => v_count[9].CLK
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+rst => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+new_line => v_count.OUTPUTSELECT
+count[0] <= v_count[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= v_count[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= v_count[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= v_count[3].DB_MAX_OUTPUT_PORT_TYPE
+count[4] <= v_count[4].DB_MAX_OUTPUT_PORT_TYPE
+count[5] <= v_count[5].DB_MAX_OUTPUT_PORT_TYPE
+count[6] <= v_count[6].DB_MAX_OUTPUT_PORT_TYPE
+count[7] <= v_count[7].DB_MAX_OUTPUT_PORT_TYPE
+count[8] <= v_count[8].DB_MAX_OUTPUT_PORT_TYPE
+count[9] <= v_count[9].DB_MAX_OUTPUT_PORT_TYPE
+
+

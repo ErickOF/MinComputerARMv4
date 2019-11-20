@@ -1,0 +1,27 @@
+module vga_controller_top (input clk, rst, click, select,
+                           output logic vga_clk, vga_sync_n, vga_blank_n, vga_vs, vga_hs,
+                           output logic [7:0] VGA_R, VGA_G, VGA_B);
+
+logic [9:0] posx, posy;
+logic [3:0] posIn;
+logic vga_clk_t, ready;
+logic [23:0] RGB_bomberman, RGB_p2, RGB_screen, RGB_pointer, RGB;
+logic screen_visible, bomberman_visible, bomb1_visible, bomb2_visible, enemy_visible, explosion_visible;
+
+clock_divider clock_divider(clk, vga_clk_t);
+vga_signal vga_signal(vga_clk_t, rst, vga_hs, vga_vs, vga_blank_n, vga_sync_n, posx, posy);
+
+//escogerPos pointer(clk, rst, click, select, posIn, ready);
+game_screen_printer game_screen_printer(.x(posx), .y(posy), .RGB(RGB_screen), .print(screen_visible));
+bomberman_sprite_top bomberman_sprite_top(.clk(vga_clk_t), .pos(8'd1), 
+                    .pox(posx), .posy(posy), .visible(bomberman_visible), .RGB(RGB_bomberman));
+//SpritePrinter2 sp2(vga_clk_t, posx, posy, 10'd64, 10'd64, sp2_visible, RGB_p2);
+//LinesPrinter lines(posx, posy, RGB_lines, lines_visible);
+//PointerPrinter pointerp(posx, posy, 4'b0000, RGB_pointer, pointer_visible);
+
+rgb_mux rgb_mux({pointer_visible, sp1_visible, sp2_visible, lines_visible}, RGB_p1, RGB_p2, RGB_lines, RGB_pointer, RGB);
+
+assign vga_clk = vga_clk_t;
+assign {VGA_R, VGA_G, VGA_B} = RGB;
+
+endmodule // vga_controller_top

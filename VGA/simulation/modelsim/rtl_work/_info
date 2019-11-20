@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Work Files/Proyecto_Taller/simulation/modelsim
+vcomparator
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1574228102
+!i10b 1
+!s100 aach`3O<UW7>In9ZSZ_c32
+Ikl`QhM<f5hPGd5WHDXmhM2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 comparator_sv_unit
+S1
+R0
+w1574046321
+8D:/Work Files/Proyecto_Taller/comparator.sv
+FD:/Work Files/Proyecto_Taller/comparator.sv
+L0 11
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1574228102.000000
+!s107 D:/Work Files/Proyecto_Taller/comparator.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Proyecto_Taller|D:/Work Files/Proyecto_Taller/comparator.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work {+incdir+D:/Work Files/Proyecto_Taller}
+Z8 tCvgOpt 0
+vcounter
+R1
+R2
+!i10b 1
+!s100 `_357_;:=[`QJ5EcCS:a@1
+I_KBcPeU4Vf<?BWCl_nzJ=1
+R3
+!s105 counter_sv_unit
+S1
+R0
+w1574046342
+8D:/Work Files/Proyecto_Taller/counter.sv
+FD:/Work Files/Proyecto_Taller/counter.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/Work Files/Proyecto_Taller/counter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Proyecto_Taller|D:/Work Files/Proyecto_Taller/counter.sv|
+!i113 1
+R6
+R7
+R8
+vvga_signal
+R1
+R2
+!i10b 1
+!s100 V>55=k_TmV28CCMNNBB;H0
+Ib@l:J@:FDB0]:M3AO^7o@1
+R3
+!s105 vga_signal_sv_unit
+S1
+R0
+w1574220265
+8D:/Work Files/Proyecto_Taller/vga_signal.sv
+FD:/Work Files/Proyecto_Taller/vga_signal.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z9 !s108 1574228101.000000
+!s107 D:/Work Files/Proyecto_Taller/vga_signal.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Proyecto_Taller|D:/Work Files/Proyecto_Taller/vga_signal.sv|
+!i113 1
+R6
+R7
+R8
+vvga_signal_test
+R1
+!s110 1574228101
+!i10b 1
+!s100 WhW9B9W[1TYg?6M@jhZ[d0
+IUMQG]__;L?j@]ZoFVgcGj0
+R3
+!s105 vga_signal_test_sv_unit
+S1
+R0
+w1574220307
+8D:/Work Files/Proyecto_Taller/vga_signal_test.sv
+FD:/Work Files/Proyecto_Taller/vga_signal_test.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R9
+!s107 D:/Work Files/Proyecto_Taller/vga_signal_test.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/Work Files/Proyecto_Taller|D:/Work Files/Proyecto_Taller/vga_signal_test.sv|
+!i113 1
+R6
+R7
+R8

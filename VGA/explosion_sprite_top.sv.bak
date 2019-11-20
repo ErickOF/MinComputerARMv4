@@ -1,0 +1,28 @@
+/*
+Sprite Printer Module
+
+Inputs:
+    xcurrent: Current pixel x
+    ycurrent: Current pixel y
+	 xsprite: Pixel x where sprite is drawn
+    ysprite: Pixel y where sprite is drawn
+
+Outputs:
+    R, G, B: RGB colors
+    print: signal to indicate if sprite will be drawn
+*/
+module explosion_sprite_top (input  clk,
+                            input  logic [9:0]  posx, posy, pixelx, pixely,
+						    output logic visible,
+						    output logic [23:0] RGB);
+// Sprite
+logic [9:0] address;
+logic [5:0] color;
+// Sprite
+rom_explosion rom_explosion (address, clk, color);
+// 
+color_decoder color_decoder (color, RGB);
+logic xm63, ym63;
+offset_address offset_address(pixelx, pixely, posx, posy, xm63, ym63, address);
+visible_logic visible_logic(xm63, ym63, color, visible);
+endmodule // explosion_sprite_top
