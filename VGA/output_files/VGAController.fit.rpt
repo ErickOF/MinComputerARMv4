@@ -1,5 +1,5 @@
 Fitter report for VGAController
-Wed Nov 20 08:47:51 2019
+Wed Nov 20 09:24:05 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Wed Nov 20 08:47:51 2019       ;
+; Fitter Status                   ; Successful - Wed Nov 20 09:24:05 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; VGAController                               ;
 ; Top-level Entity Name           ; vga_controller_top                          ;
@@ -71,7 +71,7 @@ refer to the applicable agreement for further details.
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; 202 / 32,070 ( < 1 % )                      ;
-; Total registers                 ; 51                                          ;
+; Total registers                 ; 50                                          ;
 ; Total pins                      ; 31 / 457 ( 7 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 24,576 / 4,065,280 ( < 1 % )                ;
@@ -153,14 +153,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.04        ;
+; Average used               ; 1.03        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   1.4%      ;
-;     Processor 3            ;   1.3%      ;
-;     Processor 4            ;   1.3%      ;
+;     Processor 2            ;   1.1%      ;
+;     Processor 3            ;   1.0%      ;
+;     Processor 4            ;   1.0%      ;
 +----------------------------+-------------+
 
 
@@ -171,7 +171,6 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------------------------+------------------+-----------------------+
 ; clk~inputCLKENA0                             ; Created    ; Placement                                         ; Fitter Periphery Placement ;           ;                ;                                                        ;                  ;                       ;
 ; vga_signal:vga_signal|counter:h_counter|Q[4] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; vga_signal:vga_signal|counter:h_counter|Q[4]~DUPLICATE ;                  ;                       ;
-; vga_signal:vga_signal|counter:v_counter|Q[1] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; vga_signal:vga_signal|counter:v_counter|Q[1]~DUPLICATE ;                  ;                       ;
 ; vga_signal:vga_signal|counter:v_counter|Q[9] ; Duplicated ; Router Logic Cell Insertion and Logic Duplication ; Routability optimization   ;           ;                ; vga_signal:vga_signal|counter:v_counter|Q[9]~DUPLICATE ;                  ;                       ;
 +----------------------------------------------+------------+---------------------------------------------------+----------------------------+-----------+----------------+--------------------------------------------------------+------------------+-----------------------+
 
@@ -224,12 +223,12 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 +-------------------------------------------------------------+--------------------+-------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 202 / 32,070       ; < 1 % ;
 ; ALMs needed [=A-B+C]                                        ; 202                ;       ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 203 / 32,070       ; < 1 % ;
-;         [a] ALMs used for LUT logic and registers           ; 21                 ;       ;
-;         [b] ALMs used for LUT logic                         ; 179                ;       ;
-;         [c] ALMs used for registers                         ; 3                  ;       ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 205 / 32,070       ; < 1 % ;
+;         [a] ALMs used for LUT logic and registers           ; 20                 ;       ;
+;         [b] ALMs used for LUT logic                         ; 181                ;       ;
+;         [c] ALMs used for registers                         ; 4                  ;       ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                  ;       ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32,070         ; < 1 % ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 32,070         ; < 1 % ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32,070         ; 0 %   ;
 ;         [a] Due to location constrained logic               ; 0                  ;       ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                  ;       ;
@@ -238,8 +237,8 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ;                                                             ;                    ;       ;
 ; Difficulty packing design                                   ; Low                ;       ;
 ;                                                             ;                    ;       ;
-; Total LABs:  partially or completely used                   ; 23 / 3,207         ; < 1 % ;
-;     -- Logic LABs                                           ; 23                 ;       ;
+; Total LABs:  partially or completely used                   ; 25 / 3,207         ; < 1 % ;
+;     -- Logic LABs                                           ; 25                 ;       ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                  ;       ;
 ;                                                             ;                    ;       ;
 ; Combinational ALUT usage for logic                          ; 326                ;       ;
@@ -248,19 +247,19 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ;     -- 5 input functions                                    ; 93                 ;       ;
 ;     -- 4 input functions                                    ; 41                 ;       ;
 ;     -- <=3 input functions                                  ; 86                 ;       ;
-; Combinational ALUT usage for route-throughs                 ; 0                  ;       ;
+; Combinational ALUT usage for route-throughs                 ; 1                  ;       ;
 ;                                                             ;                    ;       ;
-; Dedicated logic registers                                   ; 51                 ;       ;
+; Dedicated logic registers                                   ; 50                 ;       ;
 ;     -- By type:                                             ;                    ;       ;
 ;         -- Primary logic registers                          ; 48 / 64,140        ; < 1 % ;
-;         -- Secondary logic registers                        ; 3 / 64,140         ; < 1 % ;
+;         -- Secondary logic registers                        ; 2 / 64,140         ; < 1 % ;
 ;     -- By function:                                         ;                    ;       ;
 ;         -- Design implementation registers                  ; 48                 ;       ;
-;         -- Routing optimization registers                   ; 3                  ;       ;
+;         -- Routing optimization registers                   ; 2                  ;       ;
 ;                                                             ;                    ;       ;
 ; Virtual pins                                                ; 0                  ;       ;
 ; I/O pins                                                    ; 31 / 457           ; 7 %   ;
-;     -- Clock pins                                           ; 2 / 8              ; 25 %  ;
+;     -- Clock pins                                           ; 3 / 8              ; 38 %  ;
 ;     -- Dedicated input pins                                 ; 0 / 21             ; 0 %   ;
 ;                                                             ;                    ;       ;
 ; Hard processor system peripheral utilization                ;                    ;       ;
@@ -312,11 +311,11 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ; Impedance control blocks                                    ; 0 / 4              ; 0 %   ;
 ; Hard Memory Controllers                                     ; 0 / 2              ; 0 %   ;
 ; Average interconnect usage (total/H/V)                      ; 0.2% / 0.2% / 0.1% ;       ;
-; Peak interconnect usage (total/H/V)                         ; 5.9% / 6.4% / 4.4% ;       ;
+; Peak interconnect usage (total/H/V)                         ; 5.7% / 6.0% / 4.9% ;       ;
 ; Maximum fan-out                                             ; 154                ;       ;
 ; Highest non-global fan-out                                  ; 43                 ;       ;
-; Total fan-out                                               ; 1394               ;       ;
-; Average fan-out                                             ; 3.15               ;       ;
+; Total fan-out                                               ; 1392               ;       ;
+; Average fan-out                                             ; 3.14               ;       ;
 +-------------------------------------------------------------+--------------------+-------+
 
 
@@ -327,12 +326,12 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 +-------------------------------------------------------------+-----------------------+--------------------------------+
 ; Logic utilization (ALMs needed / total ALMs on device)      ; 202 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
 ; ALMs needed [=A-B+C]                                        ; 202                   ; 0                              ;
-;     [A] ALMs used in final placement [=a+b+c+d]             ; 203 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
-;         [a] ALMs used for LUT logic and registers           ; 21                    ; 0                              ;
-;         [b] ALMs used for LUT logic                         ; 179                   ; 0                              ;
-;         [c] ALMs used for registers                         ; 3                     ; 0                              ;
+;     [A] ALMs used in final placement [=a+b+c+d]             ; 205 / 32070 ( < 1 % ) ; 0 / 32070 ( 0 % )              ;
+;         [a] ALMs used for LUT logic and registers           ; 20                    ; 0                              ;
+;         [b] ALMs used for LUT logic                         ; 181                   ; 0                              ;
+;         [c] ALMs used for registers                         ; 4                     ; 0                              ;
 ;         [d] ALMs used for memory (up to half of total ALMs) ; 0                     ; 0                              ;
-;     [B] Estimate of ALMs recoverable by dense packing       ; 1 / 32070 ( < 1 % )   ; 0 / 32070 ( 0 % )              ;
+;     [B] Estimate of ALMs recoverable by dense packing       ; 3 / 32070 ( < 1 % )   ; 0 / 32070 ( 0 % )              ;
 ;     [C] Estimate of ALMs unavailable [=a+b+c+d]             ; 0 / 32070 ( 0 % )     ; 0 / 32070 ( 0 % )              ;
 ;         [a] Due to location constrained logic               ; 0                     ; 0                              ;
 ;         [b] Due to LAB-wide signal conflicts                ; 0                     ; 0                              ;
@@ -341,8 +340,8 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ;                                                             ;                       ;                                ;
 ; Difficulty packing design                                   ; Low                   ; Low                            ;
 ;                                                             ;                       ;                                ;
-; Total LABs:  partially or completely used                   ; 23 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
-;     -- Logic LABs                                           ; 23                    ; 0                              ;
+; Total LABs:  partially or completely used                   ; 25 / 3207 ( < 1 % )   ; 0 / 3207 ( 0 % )               ;
+;     -- Logic LABs                                           ; 25                    ; 0                              ;
 ;     -- Memory LABs (up to half of total LABs)               ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Combinational ALUT usage for logic                          ; 326                   ; 0                              ;
@@ -351,7 +350,7 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ;     -- 5 input functions                                    ; 93                    ; 0                              ;
 ;     -- 4 input functions                                    ; 41                    ; 0                              ;
 ;     -- <=3 input functions                                  ; 86                    ; 0                              ;
-; Combinational ALUT usage for route-throughs                 ; 0                     ; 0                              ;
+; Combinational ALUT usage for route-throughs                 ; 1                     ; 0                              ;
 ; Memory ALUT usage                                           ; 0                     ; 0                              ;
 ;     -- 64-address deep                                      ; 0                     ; 0                              ;
 ;     -- 32-address deep                                      ; 0                     ; 0                              ;
@@ -359,10 +358,10 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ; Dedicated logic registers                                   ; 0                     ; 0                              ;
 ;     -- By type:                                             ;                       ;                                ;
 ;         -- Primary logic registers                          ; 48 / 64140 ( < 1 % )  ; 0 / 64140 ( 0 % )              ;
-;         -- Secondary logic registers                        ; 3 / 64140 ( < 1 % )   ; 0 / 64140 ( 0 % )              ;
+;         -- Secondary logic registers                        ; 2 / 64140 ( < 1 % )   ; 0 / 64140 ( 0 % )              ;
 ;     -- By function:                                         ;                       ;                                ;
 ;         -- Design implementation registers                  ; 48                    ; 0                              ;
-;         -- Routing optimization registers                   ; 3                     ; 0                              ;
+;         -- Routing optimization registers                   ; 2                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ;                                                             ;                       ;                                ;
 ; Virtual pins                                                ; 0                     ; 0                              ;
@@ -380,7 +379,7 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ;     -- Registered Output Connections                        ; 0                     ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; Internal Connections                                        ;                       ;                                ;
-;     -- Total Connections                                    ; 1696                  ; 0                              ;
+;     -- Total Connections                                    ; 1694                  ; 0                              ;
 ;     -- Registered Connections                               ; 205                   ; 0                              ;
 ;                                                             ;                       ;                                ;
 ; External Connections                                        ;                       ;                                ;
@@ -413,7 +412,7 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
-; clk  ; AA14  ; 3B       ; 36           ; 0            ; 0            ; 28                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
+; clk  ; AF14  ; 3B       ; 32           ; 0            ; 0            ; 28                    ; 0                  ; yes    ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 ; rst  ; AB12  ; 3A       ; 12           ; 0            ; 17           ; 2                     ; 0                  ; no     ; no             ; no              ; no       ; Off          ; 2.5 V        ; Off         ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+-----------------+----------+--------------+--------------+-------------+---------------------------+----------------------+-----------+
 
@@ -523,7 +522,7 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ; AA11     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AA12     ; 74         ; 3A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA13     ; 90         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AA14     ; 122        ; 3B             ; clk                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
+; AA14     ; 122        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA15     ; 120        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA16     ; 146        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AA17     ;            ; 4A             ; VCCIO4A                         ; power  ;              ; 2.5V                ; --           ;                 ; --       ; --           ;
@@ -673,7 +672,7 @@ The pin-out file can be found in C:/Users/ErickOF/Documents/Git/MinComputerARMv4
 ; AF11     ; 87         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF12     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
 ; AF13     ; 93         ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
-; AF14     ; 114        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
+; AF14     ; 114        ; 3B             ; clk                             ; input  ; 2.5 V        ;                     ; Column I/O   ; Y               ; no       ; Off          ;
 ; AF15     ; 112        ; 3B             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF16     ; 137        ; 4A             ; RESERVED_INPUT_WITH_WEAK_PULLUP ;        ;              ;                     ; Column I/O   ;                 ; no       ; On           ;
 ; AF17     ;            ;                ; GND                             ; gnd    ;              ;                     ; --           ;                 ; --       ; --           ;
@@ -1426,10 +1425,10 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node                     ; ALMs needed [=A-B+C] ; [A] ALMs used in final placement ; [B] Estimate of ALMs recoverable by dense packing ; [C] Estimate of ALMs unavailable ; ALMs used for memory ; Combinational ALUTs ; Dedicated Logic Registers ; I/O Registers ; Block Memory Bits ; M10Ks ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                      ; Entity Name          ; Library Name ;
 +------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
-; |vga_controller_top                            ; 201.5 (1.2)          ; 202.5 (1.2)                      ; 1.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 326 (2)             ; 51 (0)                    ; 0 (0)         ; 24576             ; 3     ; 0          ; 31   ; 0            ; |vga_controller_top                                                                                                                                      ; vga_controller_top   ; work         ;
-;    |bomb1_sprite_top:bomb1_sprite_top|         ; 8.0 (0.0)            ; 8.3 (0.0)                        ; 0.3 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (0)              ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top                                                                                                    ; bomb1_sprite_top     ; work         ;
+; |vga_controller_top                            ; 201.5 (1.2)          ; 204.5 (1.2)                      ; 3.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 326 (2)             ; 50 (0)                    ; 0 (0)         ; 24576             ; 3     ; 0          ; 31   ; 0            ; |vga_controller_top                                                                                                                                      ; vga_controller_top   ; work         ;
+;    |bomb1_sprite_top:bomb1_sprite_top|         ; 7.5 (0.0)            ; 9.5 (0.0)                        ; 2.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 14 (0)              ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top                                                                                                    ; bomb1_sprite_top     ; work         ;
 ;       |color_decoder:color_decoder|            ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top|color_decoder:color_decoder                                                                        ; color_decoder        ; work         ;
-;       |offset_address:offset_address|          ; 5.0 (5.0)            ; 5.3 (5.3)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top|offset_address:offset_address                                                                      ; offset_address       ; work         ;
+;       |offset_address:offset_address|          ; 4.5 (4.5)            ; 6.5 (6.5)                        ; 2.0 (2.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 8 (8)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top|offset_address:offset_address                                                                      ; offset_address       ; work         ;
 ;       |rom_bomb1:rom_bomb1|                    ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1                                                                                ; rom_bomb1            ; work         ;
 ;          |altsyncram:altsyncram_component|     ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component                                                ; altsyncram           ; work         ;
 ;             |altsyncram_72g1:auto_generated|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated                 ; altsyncram_72g1      ; work         ;
@@ -1439,28 +1438,28 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;          |altsyncram:altsyncram_component|     ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb2_sprite_top:bomb2_sprite_top|rom_bomb2:rom_bomb2|altsyncram:altsyncram_component                                                ; altsyncram           ; work         ;
 ;             |altsyncram_82g1:auto_generated|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb2_sprite_top:bomb2_sprite_top|rom_bomb2:rom_bomb2|altsyncram:altsyncram_component|altsyncram_82g1:auto_generated                 ; altsyncram_82g1      ; work         ;
 ;       |visible_logic:visible_logic|            ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomb2_sprite_top:bomb2_sprite_top|visible_logic:visible_logic                                                                        ; visible_logic        ; work         ;
-;    |bomberman_sprite_top:bomberman_sprite_top| ; 13.8 (0.0)           ; 14.5 (0.0)                       ; 0.7 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (0)              ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top                                                                                            ; bomberman_sprite_top ; work         ;
+;    |bomberman_sprite_top:bomberman_sprite_top| ; 13.7 (0.0)           ; 13.7 (0.0)                       ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 29 (0)              ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top                                                                                            ; bomberman_sprite_top ; work         ;
 ;       |color_decoder:color_decoder|            ; 3.0 (3.0)            ; 3.0 (3.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top|color_decoder:color_decoder                                                                ; color_decoder        ; work         ;
-;       |offset_address:offset_address|          ; 9.3 (9.3)            ; 10.0 (10.0)                      ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top|offset_address:offset_address                                                              ; offset_address       ; work         ;
+;       |offset_address:offset_address|          ; 9.2 (9.2)            ; 9.2 (9.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top|offset_address:offset_address                                                              ; offset_address       ; work         ;
 ;       |rom_bomberman:rom_bomberman|            ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top|rom_bomberman:rom_bomberman                                                                ; rom_bomberman        ; work         ;
 ;          |altsyncram:altsyncram_component|     ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top|rom_bomberman:rom_bomberman|altsyncram:altsyncram_component                                ; altsyncram           ; work         ;
 ;             |altsyncram_9hg1:auto_generated|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 1     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top|rom_bomberman:rom_bomberman|altsyncram:altsyncram_component|altsyncram_9hg1:auto_generated ; altsyncram_9hg1      ; work         ;
 ;       |visible_logic:visible_logic|            ; 1.5 (1.5)            ; 1.5 (1.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|bomberman_sprite_top:bomberman_sprite_top|visible_logic:visible_logic                                                                ; visible_logic        ; work         ;
-;    |clock_divider:clock_divider|               ; 18.5 (18.5)          ; 19.3 (19.3)                      ; 0.8 (0.8)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (33)             ; 28 (28)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|clock_divider:clock_divider                                                                                                          ; clock_divider        ; work         ;
+;    |clock_divider:clock_divider|               ; 18.5 (18.5)          ; 19.8 (19.8)                      ; 1.3 (1.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 33 (33)             ; 28 (28)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|clock_divider:clock_divider                                                                                                          ; clock_divider        ; work         ;
 ;    |explosion_sprite_top:explosion_sprite_top| ; 2.5 (0.0)            ; 2.5 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|explosion_sprite_top:explosion_sprite_top                                                                                            ; explosion_sprite_top ; work         ;
 ;       |rom_explosion:rom_explosion|            ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion                                                                ; rom_explosion        ; work         ;
 ;          |altsyncram:altsyncram_component|     ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component                                ; altsyncram           ; work         ;
 ;             |altsyncram_nig1:auto_generated|   ; 0.0 (0.0)            ; 0.0 (0.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 0 (0)                     ; 0 (0)         ; 6144              ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated ; altsyncram_nig1      ; work         ;
 ;       |visible_logic:visible_logic|            ; 2.5 (2.5)            ; 2.5 (2.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 3 (3)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|explosion_sprite_top:explosion_sprite_top|visible_logic:visible_logic                                                                ; visible_logic        ; work         ;
-;    |game_screen_printer:game_screen_printer|   ; 51.7 (51.7)          ; 51.7 (51.7)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 68 (68)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|game_screen_printer:game_screen_printer                                                                                              ; game_screen_printer  ; work         ;
+;    |game_screen_printer:game_screen_printer|   ; 52.3 (52.3)          ; 52.3 (52.3)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 68 (68)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|game_screen_printer:game_screen_printer                                                                                              ; game_screen_printer  ; work         ;
 ;    |rgb_mux:rgb_mux|                           ; 66.0 (66.0)          ; 66.0 (66.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 105 (105)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|rgb_mux:rgb_mux                                                                                                                      ; rgb_mux              ; work         ;
-;    |vga_signal:vga_signal|                     ; 33.2 (14.6)          ; 34.5 (15.8)                      ; 1.4 (1.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 64 (38)             ; 23 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal                                                                                                                ; vga_signal           ; work         ;
+;    |vga_signal:vga_signal|                     ; 34.2 (15.8)          ; 35.0 (15.8)                      ; 0.8 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 64 (38)             ; 22 (0)                    ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal                                                                                                                ; vga_signal           ; work         ;
 ;       |comparator:hmin_comparator|             ; 0.5 (0.5)            ; 0.7 (0.7)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|comparator:hmin_comparator                                                                                     ; comparator           ; work         ;
 ;       |comparator:maxscreenh_comparator|       ; 0.3 (0.3)            ; 0.5 (0.5)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|comparator:maxscreenh_comparator                                                                               ; comparator           ; work         ;
-;       |comparator:maxscreenv_comparator|       ; 0.5 (0.5)            ; 0.5 (0.5)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|comparator:maxscreenv_comparator                                                                               ; comparator           ; work         ;
+;       |comparator:maxscreenv_comparator|       ; 0.8 (0.8)            ; 0.8 (0.8)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 2 (2)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|comparator:maxscreenv_comparator                                                                               ; comparator           ; work         ;
 ;       |comparator:vmin_comparator|             ; 1.0 (1.0)            ; 1.0 (1.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 1 (1)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|comparator:vmin_comparator                                                                                     ; comparator           ; work         ;
-;       |counter:h_counter|                      ; 7.7 (7.7)            ; 8.0 (8.0)                        ; 0.3 (0.3)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 11 (11)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|counter:h_counter                                                                                              ; counter              ; work         ;
-;       |counter:v_counter|                      ; 8.1 (8.1)            ; 8.1 (8.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 12 (12)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|counter:v_counter                                                                                              ; counter              ; work         ;
+;       |counter:h_counter|                      ; 7.7 (7.7)            ; 8.2 (8.2)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 11 (11)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|counter:h_counter                                                                                              ; counter              ; work         ;
+;       |counter:v_counter|                      ; 8.0 (8.0)            ; 8.0 (8.0)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 10 (10)             ; 11 (11)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |vga_controller_top|vga_signal:vga_signal|counter:v_counter                                                                                              ; counter              ; work         ;
 +------------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1499,7 +1498,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; VGA_B[5]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; VGA_B[6]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
 ; VGA_B[7]    ; Output   ; -- ; --   ; --   ; -- ; (0)  ; (31)  ; --     ; --                     ; --                       ;
-; rst         ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
+; rst         ; Input    ; -- ; --   ; (0)  ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 ; clk         ; Input    ; -- ; (0)  ; --   ; -- ; --   ; --    ; --     ; --                     ; --                       ;
 +-------------+----------+----+------+------+----+------+-------+--------+------------------------+--------------------------+
 
@@ -1510,10 +1509,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                ; Pad To Core Index ; Setting ;
 +------------------------------------+-------------------+---------+
 ; rst                                ;                   ;         ;
-;      - vga_signal:vga_signal|rstv2 ; 0                 ; 0       ;
-;      - vga_signal:vga_signal|rsth2 ; 0                 ; 0       ;
+;      - vga_signal:vga_signal|rstv2 ; 1                 ; 0       ;
+;      - vga_signal:vga_signal|rsth2 ; 1                 ; 0       ;
 ; clk                                ;                   ;         ;
-;      - clk~inputCLKENA0            ; 0                 ; 0       ;
 +------------------------------------+-------------------+---------+
 
 
@@ -1522,11 +1520,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------------+----------------------+---------+--------------------+--------+----------------------+------------------+---------------------------+
 ; Name                                                       ; Location             ; Fan-Out ; Usage              ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------------------------------------------------------------+----------------------+---------+--------------------+--------+----------------------+------------------+---------------------------+
-; clk                                                        ; PIN_AA14             ; 28      ; Clock              ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; rtl~0                                                      ; LABCELL_X31_Y79_N18  ; 43      ; Clock, Sync. clear ; no     ; --                   ; --               ; --                        ;
-; vga_signal:vga_signal|comparator:hmin_comparator|LessThan1 ; MLABCELL_X28_Y79_N33 ; 13      ; Clock              ; no     ; --                   ; --               ; --                        ;
-; vga_signal:vga_signal|rsth2                                ; MLABCELL_X28_Y79_N51 ; 11      ; Async. clear       ; no     ; --                   ; --               ; --                        ;
-; vga_signal:vga_signal|rstv2                                ; MLABCELL_X28_Y78_N30 ; 12      ; Async. clear       ; no     ; --                   ; --               ; --                        ;
+; clk                                                        ; PIN_AF14             ; 28      ; Clock              ; yes    ; Global Clock         ; GCLK6            ; --                        ;
+; rtl~0                                                      ; LABCELL_X31_Y78_N12  ; 43      ; Clock, Sync. clear ; no     ; --                   ; --               ; --                        ;
+; vga_signal:vga_signal|comparator:hmin_comparator|LessThan1 ; MLABCELL_X28_Y78_N15 ; 12      ; Clock              ; no     ; --                   ; --               ; --                        ;
+; vga_signal:vga_signal|rsth2                                ; MLABCELL_X28_Y78_N54 ; 11      ; Async. clear       ; no     ; --                   ; --               ; --                        ;
+; vga_signal:vga_signal|rstv2                                ; LABCELL_X24_Y79_N9   ; 11      ; Async. clear       ; no     ; --                   ; --               ; --                        ;
 +------------------------------------------------------------+----------------------+---------+--------------------+--------+----------------------+------------------+---------------------------+
 
 
@@ -1535,7 +1533,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+----------------------+------------------+---------------------------+
 ; Name ; Location ; Fan-Out ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
 +------+----------+---------+----------------------+------------------+---------------------------+
-; clk  ; PIN_AA14 ; 28      ; Global Clock         ; GCLK4            ; --                        ;
+; clk  ; PIN_AF14 ; 28      ; Global Clock         ; GCLK6            ; --                        ;
 +------+----------+---------+----------------------+------------------+---------------------------+
 
 
@@ -1545,9 +1543,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                                                                                                                                            ; Type ; Mode ; Clock Mode   ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; Implementation Port A Depth ; Implementation Port A Width ; Implementation Port B Depth ; Implementation Port B Width ; Implementation Bits ; M10K blocks ; MLABs ; MIF           ; Location                         ; Mixed Width RDW Mode ; Port A RDW Mode ; Port B RDW Mode ; ECC Mode ; ECC Pipeline Registers ; Fits in MLABs         ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
 ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ALTSYNCRAM                 ; AUTO ; ROM  ; Single Clock ; 1024         ; 6            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 6144 ; 1024                        ; 6                           ; --                          ; --                          ; 6144                ; 1           ; 0     ; bomb1.mif     ; M10K_X26_Y77_N0                  ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; bomb2_sprite_top:bomb2_sprite_top|rom_bomb2:rom_bomb2|altsyncram:altsyncram_component|altsyncram_82g1:auto_generated|ALTSYNCRAM                 ; AUTO ; ROM  ; Single Clock ; 1024         ; 6            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 6144 ; 1024                        ; 6                           ; --                          ; --                          ; 6144                ; 1           ; 0     ; bomb2.mif     ; M10K_X26_Y78_N0                  ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; bomberman_sprite_top:bomberman_sprite_top|rom_bomberman:rom_bomberman|altsyncram:altsyncram_component|altsyncram_9hg1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 6            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 6144 ; 1024                        ; 6                           ; --                          ; --                          ; 6144                ; 1           ; 0     ; bomberman.mif ; M10K_X26_Y79_N0                  ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
-; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 6            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 6144 ; 1024                        ; 6                           ; --                          ; --                          ; 6144                ; 2           ; 0     ; explosion.mif ; M10K_X26_Y79_N0, M10K_X26_Y78_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; bomb2_sprite_top:bomb2_sprite_top|rom_bomb2:rom_bomb2|altsyncram:altsyncram_component|altsyncram_82g1:auto_generated|ALTSYNCRAM                 ; AUTO ; ROM  ; Single Clock ; 1024         ; 6            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 6144 ; 1024                        ; 6                           ; --                          ; --                          ; 6144                ; 1           ; 0     ; bomb2.mif     ; M10K_X26_Y79_N0                  ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; bomberman_sprite_top:bomberman_sprite_top|rom_bomberman:rom_bomberman|altsyncram:altsyncram_component|altsyncram_9hg1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 6            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 6144 ; 1024                        ; 6                           ; --                          ; --                          ; 6144                ; 1           ; 0     ; bomberman.mif ; M10K_X26_Y78_N0                  ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
+; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; Single Clock ; 1024         ; 6            ; --           ; --           ; yes                    ; no                      ; --                     ; --                      ; 6144 ; 1024                        ; 6                           ; --                          ; --                          ; 6144                ; 2           ; 0     ; explosion.mif ; M10K_X26_Y78_N0, M10K_X26_Y79_N0 ; Don't care           ; New data        ; New data        ; Off      ; No                     ; No - Address Too Wide ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+-----------------------------+-----------------------------+-----------------------------+-----------------------------+---------------------+-------------+-------+---------------+----------------------------------+----------------------+-----------------+-----------------+----------+------------------------+-----------------------+
 Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
 
@@ -1557,14 +1555,14 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +---------------------------------------------+-------------------------+
 ; Routing Resource Type                       ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Block interconnects                         ; 493 / 289,320 ( < 1 % ) ;
-; C12 interconnects                           ; 14 / 13,420 ( < 1 % )   ;
-; C2 interconnects                            ; 205 / 119,108 ( < 1 % ) ;
-; C4 interconnects                            ; 93 / 56,300 ( < 1 % )   ;
+; Block interconnects                         ; 496 / 289,320 ( < 1 % ) ;
+; C12 interconnects                           ; 9 / 13,420 ( < 1 % )    ;
+; C2 interconnects                            ; 212 / 119,108 ( < 1 % ) ;
+; C4 interconnects                            ; 92 / 56,300 ( < 1 % )   ;
 ; DQS bus muxes                               ; 0 / 25 ( 0 % )          ;
 ; DQS-18 I/O buses                            ; 0 / 25 ( 0 % )          ;
 ; DQS-9 I/O buses                             ; 0 / 25 ( 0 % )          ;
-; Direct links                                ; 41 / 289,320 ( < 1 % )  ;
+; Direct links                                ; 60 / 289,320 ( < 1 % )  ;
 ; Global clocks                               ; 1 / 16 ( 6 % )          ;
 ; HPS SDRAM PLL inputs                        ; 0 / 1 ( 0 % )           ;
 ; HPS SDRAM PLL outputs                       ; 0 / 1 ( 0 % )           ;
@@ -1620,12 +1618,12 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 ; HPS_INTERFACE_TPIU_TRACE_INPUTs             ; 0 / 2 ( 0 % )           ;
 ; HPS_INTERFACE_TPIU_TRACE_OUTPUTs            ; 0 / 33 ( 0 % )          ;
 ; Horizontal periphery clocks                 ; 0 / 72 ( 0 % )          ;
-; Local interconnects                         ; 108 / 84,580 ( < 1 % )  ;
+; Local interconnects                         ; 107 / 84,580 ( < 1 % )  ;
 ; Quadrant clocks                             ; 0 / 66 ( 0 % )          ;
-; R14 interconnects                           ; 57 / 12,676 ( < 1 % )   ;
-; R14/C12 interconnect drivers                ; 65 / 20,720 ( < 1 % )   ;
-; R3 interconnects                            ; 302 / 130,992 ( < 1 % ) ;
-; R6 interconnects                            ; 311 / 266,960 ( < 1 % ) ;
+; R14 interconnects                           ; 55 / 12,676 ( < 1 % )   ;
+; R14/C12 interconnect drivers                ; 60 / 20,720 ( < 1 % )   ;
+; R3 interconnects                            ; 270 / 130,992 ( < 1 % ) ;
+; R6 interconnects                            ; 277 / 266,960 ( < 1 % ) ;
 ; Spine clocks                                ; 1 / 360 ( < 1 % )       ;
 ; Wire stub REs                               ; 0 / 15,858 ( 0 % )      ;
 +---------------------------------------------+-------------------------+
@@ -1772,12 +1770,12 @@ Note: Fitter may spread logical memories into multiple blocks to improve timing.
 +----------------------------------------------+--------------------------------------------+-------------------+
 ; Source Clock(s)                              ; Destination Clock(s)                       ; Delay Added in ns ;
 +----------------------------------------------+--------------------------------------------+-------------------+
-; clk                                          ; clk                                        ; 30.3              ;
 ; clock_divider:clock_divider|counter[0]       ; clock_divider:clock_divider|counter[0]     ; 24.6              ;
-; vga_signal:vga_signal|counter:h_counter|Q[5] ; clock_divider:clock_divider|counter[0]     ; 20.7              ;
-; vga_signal:vga_signal|counter:h_counter|Q[5] ; clock_divider:clock_divider|counter[0],I/O ; 11.3              ;
+; vga_signal:vga_signal|counter:h_counter|Q[5] ; clock_divider:clock_divider|counter[0]     ; 20.9              ;
+; clk                                          ; clk                                        ; 17.9              ;
+; vga_signal:vga_signal|counter:h_counter|Q[5] ; clock_divider:clock_divider|counter[0],I/O ; 10.1              ;
 ; clock_divider:clock_divider|counter[0]       ; clock_divider:clock_divider|counter[0],I/O ; 6.2               ;
-; clock_divider:clock_divider|counter[0],I/O   ; clock_divider:clock_divider|counter[0]     ; 1.9               ;
+; clock_divider:clock_divider|counter[0],I/O   ; clock_divider:clock_divider|counter[0]     ; 1.8               ;
 +----------------------------------------------+--------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
@@ -1788,55 +1786,55 @@ This will disable optimization of problematic paths and expose them for further 
 +----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 ; Source Register                              ; Destination Register                                                                                                                                                 ; Delay Added in ns ;
 +----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
-; clock_divider:clock_divider|counter[0]       ; clock_divider:clock_divider|counter[26]                                                                                                                              ; 10.497            ;
-; clock_divider:clock_divider|counter[26]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[27]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[24]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[23]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[22]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[21]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[20]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[19]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[18]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[17]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[16]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[15]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[14]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[13]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[12]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[11]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[10]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[9]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[8]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[7]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[6]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[5]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[4]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[3]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[2]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[1]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; clock_divider:clock_divider|counter[25]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 10.013            ;
-; vga_signal:vga_signal|counter:h_counter|Q[5] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 2.811             ;
-; vga_signal:vga_signal|counter:h_counter|Q[6] ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 1.946             ;
-; vga_signal:vga_signal|counter:h_counter|Q[0] ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 1.946             ;
-; vga_signal:vga_signal|counter:h_counter|Q[1] ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 1.946             ;
-; vga_signal:vga_signal|counter:h_counter|Q[9] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.897             ;
-; vga_signal:vga_signal|counter:h_counter|Q[8] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.897             ;
-; vga_signal:vga_signal|counter:h_counter|Q[7] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.897             ;
-; vga_signal:vga_signal|counter:h_counter|Q[4] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.897             ;
-; vga_signal:vga_signal|counter:v_counter|Q[2] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.584             ;
-; vga_signal:vga_signal|counter:v_counter|Q[0] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.571             ;
-; vga_signal:vga_signal|counter:v_counter|Q[1] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.569             ;
-; vga_signal:vga_signal|counter:v_counter|Q[5] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.556             ;
-; vga_signal:vga_signal|counter:v_counter|Q[7] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.543             ;
-; vga_signal:vga_signal|counter:v_counter|Q[6] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.528             ;
-; vga_signal:vga_signal|counter:h_counter|Q[3] ; vga_signal:vga_signal|counter:h_counter|Q[5]                                                                                                                         ; 1.456             ;
-; vga_signal:vga_signal|counter:h_counter|Q[2] ; vga_signal:vga_signal|counter:h_counter|Q[5]                                                                                                                         ; 1.456             ;
-; vga_signal:vga_signal|counter:v_counter|Q[8] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.335             ;
-; vga_signal:vga_signal|counter:v_counter|Q[9] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.327             ;
-; vga_signal:vga_signal|counter:v_counter|Q[4] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.243             ;
-; vga_signal:vga_signal|counter:v_counter|Q[3] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.243             ;
-; rst                                          ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 1.018             ;
+; clock_divider:clock_divider|counter[0]       ; clock_divider:clock_divider|counter[26]                                                                                                                              ; 4.984             ;
+; clock_divider:clock_divider|counter[26]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[27]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[24]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[23]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[22]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[21]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[20]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[19]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[18]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[17]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[16]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[15]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[14]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[13]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[12]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[11]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[10]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[9]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[8]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[7]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[6]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[5]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[4]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[3]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[2]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[1]       ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; clock_divider:clock_divider|counter[25]      ; clock_divider:clock_divider|counter[0]                                                                                                                               ; 4.404             ;
+; vga_signal:vga_signal|counter:h_counter|Q[5] ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 2.888             ;
+; vga_signal:vga_signal|counter:h_counter|Q[6] ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 1.922             ;
+; vga_signal:vga_signal|counter:h_counter|Q[0] ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 1.922             ;
+; vga_signal:vga_signal|counter:h_counter|Q[1] ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 1.922             ;
+; vga_signal:vga_signal|counter:h_counter|Q[9] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.856             ;
+; vga_signal:vga_signal|counter:h_counter|Q[8] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.856             ;
+; vga_signal:vga_signal|counter:h_counter|Q[7] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.856             ;
+; vga_signal:vga_signal|counter:h_counter|Q[4] ; bomb1_sprite_top:bomb1_sprite_top|rom_bomb1:rom_bomb1|altsyncram:altsyncram_component|altsyncram_72g1:auto_generated|ram_block1a2~porta_address_reg0                 ; 1.856             ;
+; vga_signal:vga_signal|counter:v_counter|Q[8] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.578             ;
+; vga_signal:vga_signal|counter:v_counter|Q[9] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.575             ;
+; vga_signal:vga_signal|counter:v_counter|Q[0] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.506             ;
+; vga_signal:vga_signal|counter:v_counter|Q[5] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.395             ;
+; vga_signal:vga_signal|counter:v_counter|Q[7] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.380             ;
+; vga_signal:vga_signal|counter:v_counter|Q[6] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.365             ;
+; vga_signal:vga_signal|counter:v_counter|Q[1] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.354             ;
+; vga_signal:vga_signal|counter:h_counter|Q[3] ; vga_signal:vga_signal|counter:h_counter|Q[5]                                                                                                                         ; 1.339             ;
+; vga_signal:vga_signal|counter:h_counter|Q[2] ; vga_signal:vga_signal|counter:h_counter|Q[5]                                                                                                                         ; 1.339             ;
+; vga_signal:vga_signal|counter:v_counter|Q[3] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.119             ;
+; vga_signal:vga_signal|counter:v_counter|Q[2] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.104             ;
+; vga_signal:vga_signal|counter:v_counter|Q[4] ; explosion_sprite_top:explosion_sprite_top|rom_explosion:rom_explosion|altsyncram:altsyncram_component|altsyncram_nig1:auto_generated|ram_block1a4~porta_address_reg0 ; 1.095             ;
+; rst                                          ; vga_signal:vga_signal|counter:h_counter|Q[6]                                                                                                                         ; 0.969             ;
 +----------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------+
 Note: This table only shows the top 49 path(s) that have the largest delay added for hold.
 
@@ -1856,15 +1854,11 @@ Info (176045): Design uses memory blocks. Violating setup or hold times of memor
 Info (184020): Starting Fitter periphery placement operations
 Info (11191): Automatically promoted 1 clock (1 global)
     Info (11162): clk~inputCLKENA0 with 28 fanout uses global clock CLKCTRL_G6
-        Info (12525): This signal is driven by core routing -- it may be moved during placement to reduce routing delays
-Warning (16406): 1 global input pin(s) will use non-dedicated clock routing
-    Warning (16407): Source REFCLK I/O is not placed onto a dedicated REFCLK input pin for global clock driver clk~inputCLKENA0, placed at CLKCTRL_G6
-        Info (179012): Refclk input I/O pad clk is placed onto PIN_AA14
 Info (184021): Fitter periphery placement operations ending: elapsed time is 00:00:00
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (11798): Fitter preparation operations ending: elapsed time is 00:00:20
+Info (11798): Fitter preparation operations ending: elapsed time is 00:00:18
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'VGAController.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
@@ -1872,7 +1866,7 @@ Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Tim
 Info (332130): Timing requirements not specified -- quality metrics such as performance may be sacrificed to reduce compilation time.
 Info (170189): Fitter placement preparation operations beginning
 Info (14951): The Fitter is using Advanced Physical Optimization.
-Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:04
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:06
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:03
@@ -1881,19 +1875,19 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 4% of the available device resources in the region that extends from location X22_Y70 to location X32_Y81
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:06
-Info (11888): Total time spent on timing analysis during the Fitter is 1.38 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
+Info (11888): Total time spent on timing analysis during the Fitter is 1.06 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:07
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:05
 Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/MinComputerARMv4/VGA/output_files/VGAController.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6679 megabytes
-    Info: Processing ended: Wed Nov 20 08:47:53 2019
-    Info: Elapsed time: 00:01:17
-    Info: Total CPU time (on all processors): 00:02:24
+Info: Quartus Prime Fitter was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 6663 megabytes
+    Info: Processing ended: Wed Nov 20 09:24:06 2019
+    Info: Elapsed time: 00:01:11
+    Info: Total CPU time (on all processors): 00:01:29
 
 
 +----------------------------+

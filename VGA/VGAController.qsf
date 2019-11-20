@@ -75,7 +75,7 @@ set_location_assignment PIN_C12 -to VGA_R[3]
 set_location_assignment PIN_D12 -to VGA_R[2]
 set_location_assignment PIN_E12 -to VGA_R[1]
 set_location_assignment PIN_F13 -to VGA_R[0]
-set_location_assignment PIN_AA14 -to clk
+set_location_assignment PIN_AF14 -to clk
 set_location_assignment PIN_AB12 -to rst
 set_location_assignment PIN_F10 -to vga_blank_n
 set_location_assignment PIN_A11 -to vga_clk
