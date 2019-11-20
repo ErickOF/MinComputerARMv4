@@ -7,7 +7,7 @@ module datapath (
 	input logic [1:0] ALUControl,
 	input logic MemtoReg,
 	input logic PCSrc,
-	output logic Z, N, V, C,
+	output logic [3:0] ALUFlags,
 	output logic [31:0] PC,
 	input logic [31:0] Instr,
 	output logic [31:0] ALUResult, WriteData,
@@ -40,5 +40,5 @@ module datapath (
 	//ALU logic
 	
 	mux2x1_nBits #(32) srcbmux(WriteData, ExtImm, ALUSrc, SrcB);
-	ALU #(32) alu(SrcA, SrcB, {2'b0, ALUControl}, ALUResult, Z, N, V, C);
+	ALU #(32) alu(SrcA, SrcB, {2'b0, ALUControl}, ALUResult, ALUFlags);
 endmodule
