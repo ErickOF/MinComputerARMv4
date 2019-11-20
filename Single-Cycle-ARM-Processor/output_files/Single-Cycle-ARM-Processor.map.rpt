@@ -1,0 +1,592 @@
+Analysis & Elaboration report for Single-Cycle-ARM-Processor
+Tue Nov 19 21:05:28 2019
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1
+  5. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0
+  6. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:pcmux
+  7. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|flopr:pcreg
+  8. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd1
+  9. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd2
+ 10. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra1mux
+ 11. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra2mux
+ 12. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:resmux
+ 13. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:srcbmux
+ 14. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu
+ 15. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|and_gate:and_module
+ 16. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|or_gate:or_module
+ 17. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module
+ 18. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module
+ 19. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module
+ 20. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|slr:slr_module
+ 21. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sll:sll_module
+ 22. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module
+ 23. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module
+ 24. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sar:sar_module
+ 25. Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sc:sc_module
+ 26. Analysis & Elaboration Settings
+ 27. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|ALU:alu"
+ 28. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|mux2:ra1mux"
+ 29. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd2"
+ 30. Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd1"
+ 31. Port Connectivity Checks: "processor:dut"
+ 32. Analysis & Elaboration Messages
+ 33. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Tue Nov 19 21:05:28 2019       ;
+; Quartus Prime Version         ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                 ; Single-Cycle-ARM-Processor                  ;
+; Top-level Entity Name         ; processor_testbench                         ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg0 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:pcmux ;
++----------------+-------+------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                             ;
++----------------+-------+------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                   ;
++----------------+-------+------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|flopr:pcreg ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd1 ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|adder:pcadd2 ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra1mux ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:ra2mux ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 4     ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:resmux ;
++----------------+-------+-------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                              ;
++----------------+-------+-------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                    ;
++----------------+-------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|mux2:srcbmux ;
++----------------+-------+--------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                               ;
++----------------+-------+--------------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                     ;
++----------------+-------+--------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|and_gate:and_module ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|or_gate:or_module ;
++----------------+-------+---------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                            ;
++----------------+-------+---------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                              ;
++----------------+-------+-----------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                     ;
++----------------+-------+------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|slr:slr_module ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sll:sll_module ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                                     ;
++----------------+-------+----------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sar:sar_module ;
++----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                         ;
++----------------+-------+------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                               ;
++----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: processor:dut|Arm:arm|datapath:dp|ALU:alu|sc:sc_module ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                                    ;
++---------------------------------------------------------------------------------+---------------------+----------------------------+
+; Option                                                                          ; Setting             ; Default Value              ;
++---------------------------------------------------------------------------------+---------------------+----------------------------+
+; Device                                                                          ; 5CSEMA5F31C6        ;                            ;
+; Top-level entity name                                                           ; processor_testbench ; Single-Cycle-ARM-Processor ;
+; Family name                                                                     ; Cyclone V           ; Cyclone V                  ;
+; Use smart compilation                                                           ; Off                 ; Off                        ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                  ; On                         ;
+; Enable compact report table                                                     ; Off                 ; Off                        ;
+; Restructure Multiplexers                                                        ; Auto                ; Auto                       ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                 ; Off                        ;
+; Create Debugging Nodes for IP Cores                                             ; Off                 ; Off                        ;
+; Preserve fewer node names                                                       ; On                  ; On                         ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable              ; Enable                     ;
+; Verilog Version                                                                 ; Verilog_2001        ; Verilog_2001               ;
+; VHDL Version                                                                    ; VHDL_1993           ; VHDL_1993                  ;
+; State Machine Processing                                                        ; Auto                ; Auto                       ;
+; Safe State Machine                                                              ; Off                 ; Off                        ;
+; Extract Verilog State Machines                                                  ; On                  ; On                         ;
+; Extract VHDL State Machines                                                     ; On                  ; On                         ;
+; Ignore Verilog initial constructs                                               ; Off                 ; Off                        ;
+; Iteration limit for constant Verilog loops                                      ; 5000                ; 5000                       ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                 ; 250                        ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                  ; On                         ;
+; Infer RAMs from Raw Logic                                                       ; On                  ; On                         ;
+; Parallel Synthesis                                                              ; On                  ; On                         ;
+; DSP Block Balancing                                                             ; Auto                ; Auto                       ;
+; NOT Gate Push-Back                                                              ; On                  ; On                         ;
+; Power-Up Don't Care                                                             ; On                  ; On                         ;
+; Remove Redundant Logic Cells                                                    ; Off                 ; Off                        ;
+; Remove Duplicate Registers                                                      ; On                  ; On                         ;
+; Ignore CARRY Buffers                                                            ; Off                 ; Off                        ;
+; Ignore CASCADE Buffers                                                          ; Off                 ; Off                        ;
+; Ignore GLOBAL Buffers                                                           ; Off                 ; Off                        ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                 ; Off                        ;
+; Ignore LCELL Buffers                                                            ; Off                 ; Off                        ;
+; Ignore SOFT Buffers                                                             ; On                  ; On                         ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                 ; Off                        ;
+; Optimization Technique                                                          ; Balanced            ; Balanced                   ;
+; Carry Chain Length                                                              ; 70                  ; 70                         ;
+; Auto Carry Chains                                                               ; On                  ; On                         ;
+; Auto Open-Drain Pins                                                            ; On                  ; On                         ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                 ; Off                        ;
+; Auto ROM Replacement                                                            ; On                  ; On                         ;
+; Auto RAM Replacement                                                            ; On                  ; On                         ;
+; Auto DSP Block Replacement                                                      ; On                  ; On                         ;
+; Auto Shift Register Replacement                                                 ; Auto                ; Auto                       ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto                ; Auto                       ;
+; Auto Clock Enable Replacement                                                   ; On                  ; On                         ;
+; Strict RAM Replacement                                                          ; Off                 ; Off                        ;
+; Allow Synchronous Control Signals                                               ; On                  ; On                         ;
+; Force Use of Synchronous Clear Signals                                          ; Off                 ; Off                        ;
+; Auto Resource Sharing                                                           ; Off                 ; Off                        ;
+; Allow Any RAM Size For Recognition                                              ; Off                 ; Off                        ;
+; Allow Any ROM Size For Recognition                                              ; Off                 ; Off                        ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                 ; Off                        ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                  ; On                         ;
+; Ignore translate_off and synthesis_off directives                               ; Off                 ; Off                        ;
+; Timing-Driven Synthesis                                                         ; On                  ; On                         ;
+; Report Parameter Settings                                                       ; On                  ; On                         ;
+; Report Source Assignments                                                       ; On                  ; On                         ;
+; Report Connectivity Checks                                                      ; On                  ; On                         ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                 ; Off                        ;
+; Synchronization Register Chain Length                                           ; 3                   ; 3                          ;
+; Power Optimization During Synthesis                                             ; Normal compilation  ; Normal compilation         ;
+; HDL message level                                                               ; Level2              ; Level2                     ;
+; Suppress Register Optimization Related Messages                                 ; Off                 ; Off                        ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000                ; 5000                       ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000                ; 5000                       ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                 ; 100                        ;
+; Clock MUX Protection                                                            ; On                  ; On                         ;
+; Auto Gated Clock Conversion                                                     ; Off                 ; Off                        ;
+; Block Design Naming                                                             ; Auto                ; Auto                       ;
+; SDC constraint protection                                                       ; Off                 ; Off                        ;
+; Synthesis Effort                                                                ; Auto                ; Auto                       ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                  ; On                         ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                 ; Off                        ;
+; Analysis & Synthesis Message Level                                              ; Medium              ; Medium                     ;
+; Disable Register Merging Across Hierarchies                                     ; Auto                ; Auto                       ;
+; Resource Aware Inference For Block RAM                                          ; On                  ; On                         ;
+; Automatic Parallel Synthesis                                                    ; On                  ; On                         ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                 ; Off                        ;
++---------------------------------------------------------------------------------+---------------------+----------------------------+
+
+
++-----------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|ALU:alu" ;
++------------------+-------+----------+---------------------------------+
+; Port             ; Type  ; Severity ; Details                         ;
++------------------+-------+----------+---------------------------------+
+; ALUControl[3..2] ; Input ; Info     ; Stuck at GND                    ;
++------------------+-------+----------+---------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|mux2:ra1mux" ;
++------+-------+----------+-------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                         ;
++------+-------+----------+-------------------------------------------------+
+; d1   ; Input ; Info     ; Stuck at VCC                                    ;
++------+-------+----------+-------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd2" ;
++----------+-------+----------+----------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                      ;
++----------+-------+----------+----------------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                                 ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                                 ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                                 ;
++----------+-------+----------+----------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:dut|Arm:arm|datapath:dp|adder:pcadd1" ;
++----------+-------+----------+----------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                      ;
++----------+-------+----------+----------------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                                 ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                                 ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                                 ;
++----------+-------+----------+----------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "processor:dut"                                                                           ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; clk       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; WriteData ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; DataAdr   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; MemWrite  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+    Info: Processing started: Tue Nov 19 21:05:11 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Single-Cycle-ARM-Processor -c Single-Cycle-ARM-Processor --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file alu/xor_gate_test.sv
+    Info (12023): Found entity 1: xor_gate_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/xor_gate_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/xor_gate.sv
+    Info (12023): Found entity 1: xor_gate File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/xor_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/srl_test.sv
+    Info (12023): Found entity 1: srl_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/srl_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/slr.sv
+    Info (12023): Found entity 1: slr File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/slr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sll_test.sv
+    Info (12023): Found entity 1: sll_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sll_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sll.sv
+    Info (12023): Found entity 1: sll File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sll.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sc_test.sv
+    Info (12023): Found entity 1: sc_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sc_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sc.sv
+    Info (12023): Found entity 1: sc File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sc.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sar_test.sv
+    Info (12023): Found entity 1: sar_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sar_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/sar.sv
+    Info (12023): Found entity 1: sar File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/sar.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/or_gate_test.sv
+    Info (12023): Found entity 1: or_gate_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/or_gate_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/or_gate.sv
+    Info (12023): Found entity 1: or_gate File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/or_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_result_test.sv
+    Info (12023): Found entity 1: mux_result_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_result_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_result.sv
+    Info (12023): Found entity 1: mux_result File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_result.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_not_test.sv
+    Info (12023): Found entity 1: mux_not_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_not_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/mux_not.sv
+    Info (12023): Found entity 1: mux_not File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/mux_not.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/fulladder.sv
+    Info (12023): Found entity 1: fulladder File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/fulladder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_generator_test.sv
+    Info (12023): Found entity 1: flag_generator_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/flag_generator_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/flag_generator.sv
+    Info (12023): Found entity 1: flag_generator File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/flag_generator.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/and_gate_test.sv
+    Info (12023): Found entity 1: and_gate_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/and_gate_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/and_gate.sv
+    Info (12023): Found entity 1: and_gate File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/and_gate.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/alu_test.sv
+    Info (12023): Found entity 1: ALU_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/alu.sv
+    Info (12023): Found entity 1: ALU File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu/add_sub_test.sv
+    Info (12023): Found entity 1: add_sub_test File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/add_sub_test.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file arm.sv
+    Info (12023): Found entity 1: Arm File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/Arm.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file controller.sv
+    Info (12023): Found entity 1: controller File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/controller.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file decoder.sv
+    Info (12023): Found entity 1: decoder File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/decoder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condlogic.sv
+    Info (12023): Found entity 1: condlogic File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condlogic.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file condcheck.sv
+    Info (12023): Found entity 1: condcheck File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condcheck.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file datapath.sv
+    Info (12023): Found entity 1: datapath File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
+    Info (12023): Found entity 1: regfile File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/regfile.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file adder.sv
+    Info (12023): Found entity 1: adder File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/adder.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file extend.sv
+    Info (12023): Found entity 1: extend File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/extend.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flopr.sv
+    Info (12023): Found entity 1: flopr File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/flopr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file flopenr.sv
+    Info (12023): Found entity 1: flopenr File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/flopenr.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
+    Info (12023): Found entity 1: mux2 File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/mux2.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file processor.sv
+    Info (12023): Found entity 1: processor File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
+    Info (12023): Found entity 1: dmem File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/dmem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
+    Info (12023): Found entity 1: imem File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file processor_testbench.sv
+    Info (12023): Found entity 1: processor_testbench File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor_testbench.sv Line: 1
+Info (12127): Elaborating entity "processor_testbench" for the top level hierarchy
+Info (12128): Elaborating entity "processor" for hierarchy "processor:dut" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor_testbench.sv Line: 9
+Info (12128): Elaborating entity "Arm" for hierarchy "processor:dut|Arm:arm" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 8
+Info (12128): Elaborating entity "controller" for hierarchy "processor:dut|Arm:arm|controller:c" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/Arm.sv Line: 12
+Info (12128): Elaborating entity "decoder" for hierarchy "processor:dut|Arm:arm|controller:c|decoder:dec" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/controller.sv Line: 15
+Info (12128): Elaborating entity "condlogic" for hierarchy "processor:dut|Arm:arm|controller:c|condlogic:cl" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/controller.sv Line: 16
+Info (12128): Elaborating entity "flopenr" for hierarchy "processor:dut|Arm:arm|controller:c|condlogic:cl|flopenr:flagreg1" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condlogic.sv Line: 12
+Info (12128): Elaborating entity "condcheck" for hierarchy "processor:dut|Arm:arm|controller:c|condlogic:cl|condcheck:cc" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/condlogic.sv Line: 16
+Info (12128): Elaborating entity "datapath" for hierarchy "processor:dut|Arm:arm|datapath:dp" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/Arm.sv Line: 13
+Info (12128): Elaborating entity "mux2" for hierarchy "processor:dut|Arm:arm|datapath:dp|mux2:pcmux" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 20
+Info (12128): Elaborating entity "flopr" for hierarchy "processor:dut|Arm:arm|datapath:dp|flopr:pcreg" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 21
+Info (12128): Elaborating entity "adder" for hierarchy "processor:dut|Arm:arm|datapath:dp|adder:pcadd1" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 22
+Info (12128): Elaborating entity "mux2" for hierarchy "processor:dut|Arm:arm|datapath:dp|mux2:ra1mux" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 26
+Info (12128): Elaborating entity "regfile" for hierarchy "processor:dut|Arm:arm|datapath:dp|regfile:rf" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 28
+Info (12128): Elaborating entity "extend" for hierarchy "processor:dut|Arm:arm|datapath:dp|extend:ext" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 30
+Info (12128): Elaborating entity "ALU" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/datapath.sv Line: 34
+Info (12128): Elaborating entity "and_gate" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|and_gate:and_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 18
+Info (12128): Elaborating entity "or_gate" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|or_gate:or_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 19
+Info (12128): Elaborating entity "xor_gate" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|xor_gate:xor_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 20
+Info (12128): Elaborating entity "mux_not" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_not:mux_not_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 21
+Info (12128): Elaborating entity "fulladder" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|fulladder:fulladder_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 22
+Info (12128): Elaborating entity "slr" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|slr:slr_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 23
+Info (12128): Elaborating entity "sll" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|sll:sll_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 24
+Info (12128): Elaborating entity "mux_result" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|mux_result:mux_result_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 25
+Info (12128): Elaborating entity "flag_generator" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|flag_generator:flag_generator_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 26
+Info (12128): Elaborating entity "sar" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|sar:sar_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 27
+Info (12128): Elaborating entity "sc" for hierarchy "processor:dut|Arm:arm|datapath:dp|ALU:alu|sc:sc_module" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/ALU/ALU.sv Line: 28
+Info (12128): Elaborating entity "imem" for hierarchy "processor:dut|imem:imem" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 10
+Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 4
+Warning (10030): Net "RAM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 4
+Warning (10030): Net "RAM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/imem.sv Line: 4
+Info (12128): Elaborating entity "dmem" for hierarchy "processor:dut|dmem:dmem" File: C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/processor.sv Line: 11
+Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/output_files/Single-Cycle-ARM-Processor.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4787 megabytes
+    Info: Processing ended: Tue Nov 19 21:05:28 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:24
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/ErickOF/Documents/Git/Single-Cycle-ARM-Processor/output_files/Single-Cycle-ARM-Processor.map.smsg.
+
+
