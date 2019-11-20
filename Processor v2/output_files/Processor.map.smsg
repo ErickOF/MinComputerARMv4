@@ -1,9 +1,0 @@
-Info (10281): Verilog HDL Declaration information at flag_generator.sv(1): object "n" differs only in case from object "N" in the same scope File: F:/MinComputerARMv4-master/Processor/flag_generator.sv Line: 1
-Warning (10273): Verilog HDL warning at EnemiesRegister.sv(10): extended using "x" or "z" File: F:/MinComputerARMv4-master/Processor/EnemiesRegister.sv Line: 10
-Warning (10273): Verilog HDL warning at dataMem.sv(7): extended using "x" or "z" File: F:/MinComputerARMv4-master/Processor/dataMem.sv Line: 7
-Warning (10273): Verilog HDL warning at BombRegister.sv(13): extended using "x" or "z" File: F:/MinComputerARMv4-master/Processor/BombRegister.sv Line: 13
-Warning (10273): Verilog HDL warning at bitextender.sv(11): extended using "x" or "z" File: F:/MinComputerARMv4-master/Processor/bitextender.sv Line: 11
-Warning (10273): Verilog HDL warning at decoder.sv(43): extended using "x" or "z" File: F:/MinComputerARMv4-master/Processor/decoder.sv Line: 43
-Warning (10273): Verilog HDL warning at decoder.sv(74): extended using "x" or "z" File: F:/MinComputerARMv4-master/Processor/decoder.sv Line: 74
-Info (10281): Verilog HDL Declaration information at ALU.sv(1): object "n" differs only in case from object "N" in the same scope File: F:/MinComputerARMv4-master/Processor/ALU.sv Line: 1
-Warning (10273): Verilog HDL warning at KeyboardRegister.sv(7): extended using "x" or "z" File: F:/MinComputerARMv4-master/Processor/KeyboardRegister.sv Line: 7
