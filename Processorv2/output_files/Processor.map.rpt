@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Processor
-Tue Nov 19 22:14:31 2019
+Wed Nov 20 01:34:27 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -15,44 +15,48 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Registers Removed During Synthesis
   9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Parameter Settings for User Entity Instance: ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg1
- 12. Parameter Settings for User Entity Instance: ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg0
- 13. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:pcmux
- 14. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|FlipFlop:pcreg
- 15. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|fulladder:pcadd1
- 16. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|fulladder:pcadd2
- 17. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra1mux
- 18. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra2mux
- 19. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:resmux
- 20. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:srcbmux
- 21. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu
- 22. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|and_gate:and_module
- 23. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|or_gate:or_module
- 24. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|xor_gate:xor_module
- 25. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|mux_not:mux_not_module
- 26. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|fulladder:fulladder_module
- 27. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|slr:slr_module
- 28. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|sll:sll_module
- 29. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|mux_result:mux_result_module
- 30. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|flag_generator:flag_generator_module
- 31. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|sar:sar_module
- 32. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|sc:sc_module
- 33. Port Connectivity Checks: "KeyboardDriver:kd"
- 34. Port Connectivity Checks: "KeyboardRegister:kr"
- 35. Port Connectivity Checks: "BombRegister:br"
- 36. Port Connectivity Checks: "EnemiesRegister:er"
- 37. Port Connectivity Checks: "addressingDecoder:addrDeco"
- 38. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu"
- 39. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra1mux"
- 40. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|fulladder:pcadd2"
- 41. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|fulladder:pcadd1"
- 42. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|FlipFlop:pcreg"
- 43. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath"
- 44. Post-Synthesis Netlist Statistics for Top Partition
- 45. Elapsed Time Per Partition
- 46. Analysis & Synthesis Messages
- 47. Analysis & Synthesis Suppressed Messages
+ 10. Parameter Settings for User Entity Instance: ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg1
+ 11. Parameter Settings for User Entity Instance: ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg0
+ 12. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:pcmux
+ 13. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|FlipFlop:pcreg
+ 14. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|fulladder:pcadd1
+ 15. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|fulladder:pcadd2
+ 16. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra1mux
+ 17. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra2mux
+ 18. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:resmux
+ 19. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|mux2x1_nBits:srcbmux
+ 20. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu
+ 21. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit
+ 22. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|fulladder:fulladder_module
+ 23. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m1
+ 24. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m2
+ 25. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log
+ 26. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|and_gate:and_module
+ 27. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|or_gate:or_module
+ 28. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|xor_gate:xor_module
+ 29. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_not:mux_not_module
+ 30. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|slr:slr_module
+ 31. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sll:sll_module
+ 32. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sar:sar_module
+ 33. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sc:sc_module
+ 34. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_result:mux_result_module
+ 35. Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|mux2x1_nBits:m1
+ 36. Port Connectivity Checks: "KeyboardDriver:keyDriver"
+ 37. Port Connectivity Checks: "KeyboardRegister:key"
+ 38. Port Connectivity Checks: "addressingDecoder:addrDeco"
+ 39. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_result:mux_result_module"
+ 40. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_not:mux_not_module"
+ 41. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m1"
+ 42. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|fulladder:fulladder_module"
+ 43. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu"
+ 44. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra1mux"
+ 45. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|fulladder:pcadd2"
+ 46. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|fulladder:pcadd1"
+ 47. Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|FlipFlop:pcreg"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
+ 51. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -78,13 +82,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 19 22:14:31 2019       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 20 01:34:27 2019       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; Processor                                   ;
 ; Top-level Entity Name           ; top                                         ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1175                                        ;
+; Total registers                 ; 568                                         ;
 ; Total pins                      ; 101                                         ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -193,14 +197,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.02        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.6%      ;
-;     Processor 3            ;   0.6%      ;
-;     Processor 4            ;   0.6%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -209,14 +213,13 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                     ; Library ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
+; logicALU.sv                      ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicALU.sv          ;         ;
+; arithmeticALU.sv                 ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/arithmeticALU.sv     ;         ;
 ; top.sv                           ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv               ;         ;
-; flag_generator.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/flag_generator.sv    ;         ;
-; EnemiesRegister.sv               ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/EnemiesRegister.sv   ;         ;
 ; dataMem.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/dataMem.sv           ;         ;
 ; ControlUnit.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ControlUnit.sv       ;         ;
 ; condLogic.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/condLogic.sv         ;         ;
 ; condCheck.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/condCheck.sv         ;         ;
-; BombRegister.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/BombRegister.sv      ;         ;
 ; ARMStruct.sv                     ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ARMStruct.sv         ;         ;
 ; addressingDecoder.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/addressingDecoder.sv ;         ;
 ; instructionMem.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/instructionMem.sv    ;         ;
@@ -239,7 +242,7 @@ refer to the applicable agreement for further details.
 ; bankReg.sv                       ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/bankReg.sv           ;         ;
 ; KeyboardDriver.sv                ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/KeyboardDriver.sv    ;         ;
 ; KeyboardRegister.sv              ; yes             ; User SystemVerilog HDL File  ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/KeyboardRegister.sv  ;         ;
-; memfile.txt                      ; yes             ; Auto-Found File              ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/memfile.txt          ;         ;
+; hex.txt                          ; yes             ; Auto-Found File              ; C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/hex.txt              ;         ;
 +----------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------+---------+
 
 
@@ -248,72 +251,67 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1052      ;
+; Estimate of Logic utilization (ALMs needed) ; 392       ;
 ;                                             ;           ;
-; Combinational ALUT usage for logic          ; 900       ;
-;     -- 7 input functions                    ; 131       ;
-;     -- 6 input functions                    ; 409       ;
-;     -- 5 input functions                    ; 137       ;
-;     -- 4 input functions                    ; 42        ;
-;     -- <=3 input functions                  ; 181       ;
+; Combinational ALUT usage for logic          ; 351       ;
+;     -- 7 input functions                    ; 1         ;
+;     -- 6 input functions                    ; 153       ;
+;     -- 5 input functions                    ; 56        ;
+;     -- 4 input functions                    ; 37        ;
+;     -- <=3 input functions                  ; 104       ;
 ;                                             ;           ;
-; Dedicated logic registers                   ; 1175      ;
+; Dedicated logic registers                   ; 568       ;
 ;                                             ;           ;
 ; I/O pins                                    ; 101       ;
 ;                                             ;           ;
 ; Total DSP Blocks                            ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1175      ;
-; Total fan-out                               ; 9755      ;
-; Average fan-out                             ; 4.28      ;
+; Maximum fan-out                             ; 568       ;
+; Total fan-out                               ; 4052      ;
+; Average fan-out                             ; 3.61      ;
 +---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+----------------+--------------+
-; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                       ; Entity Name    ; Library Name ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+----------------+--------------+
-; |top                                       ; 900 (0)             ; 1175 (0)                  ; 0                 ; 0          ; 101  ; 0            ; |top                                                                      ; top            ; work         ;
-;    |ARMStruct:arm|                         ; 678 (0)             ; 512 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm                                                        ; ARMStruct      ; work         ;
-;       |ControlUnit:controller|             ; 12 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller                                 ; ControlUnit    ; work         ;
-;          |condLogic:cl|                    ; 6 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|condLogic:cl                    ; condLogic      ; work         ;
-;             |condCheck:cc|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|condLogic:cl|condCheck:cc       ; condCheck      ; work         ;
-;          |decoder:dec|                     ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|decoder:dec                     ; decoder        ; work         ;
-;       |datapath:Datapath|                  ; 666 (0)             ; 512 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath                                      ; datapath       ; work         ;
-;          |ALU:alu|                         ; 96 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|ALU:alu                              ; ALU            ; work         ;
-;             |fulladder:fulladder_module|   ; 32 (32)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|ALU:alu|fulladder:fulladder_module   ; fulladder      ; work         ;
-;             |mux_not:mux_not_module|       ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|ALU:alu|mux_not:mux_not_module       ; mux_not        ; work         ;
-;             |mux_result:mux_result_module| ; 58 (58)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|ALU:alu|mux_result:mux_result_module ; mux_result     ; work         ;
-;          |FlipFlop:pcreg|                  ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|FlipFlop:pcreg                       ; FlipFlop       ; work         ;
-;          |bankReg:rf|                      ; 407 (407)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|bankReg:rf                           ; bankReg        ; work         ;
-;          |fulladder:pcadd1|                ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|fulladder:pcadd1                     ; fulladder      ; work         ;
-;          |fulladder:pcadd2|                ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|fulladder:pcadd2                     ; fulladder      ; work         ;
-;          |mux2x1_nBits:ra1mux|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra1mux                  ; mux2x1_nBits   ; work         ;
-;          |mux2x1_nBits:ra2mux|             ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra2mux                  ; mux2x1_nBits   ; work         ;
-;          |mux2x1_nBits:resmux|             ; 66 (66)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:resmux                  ; mux2x1_nBits   ; work         ;
-;          |mux2x1_nBits:srcbmux|            ; 29 (29)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:srcbmux                 ; mux2x1_nBits   ; work         ;
-;    |dataMem:deme|                          ; 199 (199)           ; 640 (640)                 ; 0                 ; 0          ; 0    ; 0            ; |top|dataMem:deme                                                         ; dataMem        ; work         ;
-;    |instructionMem:imem|                   ; 23 (23)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |top|instructionMem:imem                                                  ; instructionMem ; work         ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------+----------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                 ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                      ; Entity Name    ; Library Name ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+----------------+--------------+
+; |top                            ; 351 (0)             ; 568 (0)                   ; 0                 ; 0          ; 101  ; 0            ; |top                                                                     ; top            ; work         ;
+;    |ARMStruct:arm|              ; 329 (0)             ; 514 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm                                                       ; ARMStruct      ; work         ;
+;       |ControlUnit:controller|  ; 14 (0)              ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller                                ; ControlUnit    ; work         ;
+;          |condLogic:cl|         ; 10 (5)              ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|condLogic:cl                   ; condLogic      ; work         ;
+;             |FlipFlop:flagreg0| ; 3 (3)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg0 ; FlipFlop       ; work         ;
+;             |FlipFlop:flagreg1| ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg1 ; FlipFlop       ; work         ;
+;             |condCheck:cc|      ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|condLogic:cl|condCheck:cc      ; condCheck      ; work         ;
+;          |decoder:dec|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|ControlUnit:controller|decoder:dec                    ; decoder        ; work         ;
+;       |datapath:Datapath|       ; 315 (0)             ; 512 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath                                     ; datapath       ; work         ;
+;          |FlipFlop:pcreg|       ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|FlipFlop:pcreg                      ; FlipFlop       ; work         ;
+;          |bankReg:rf|           ; 219 (219)           ; 480 (480)                 ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|bankReg:rf                          ; bankReg        ; work         ;
+;          |fulladder:pcadd1|     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|fulladder:pcadd1                    ; fulladder      ; work         ;
+;          |fulladder:pcadd2|     ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|fulladder:pcadd2                    ; fulladder      ; work         ;
+;          |mux2x1_nBits:ra1mux|  ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra1mux                 ; mux2x1_nBits   ; work         ;
+;          |mux2x1_nBits:ra2mux|  ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:ra2mux                 ; mux2x1_nBits   ; work         ;
+;          |mux2x1_nBits:resmux|  ; 30 (30)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:resmux                 ; mux2x1_nBits   ; work         ;
+;    |dataMem:deme|               ; 0 (0)               ; 32 (32)                   ; 0                 ; 0          ; 0    ; 0            ; |top|dataMem:deme                                                        ; dataMem        ; work         ;
+;    |instructionMem:imem|        ; 22 (22)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |top|instructionMem:imem                                                 ; instructionMem ; work         ;
++---------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------+----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                           ;
-+----------------------------------------------------------------------------+-------------------------------------------------+
-; Register name                                                              ; Reason for Removal                              ;
-+----------------------------------------------------------------------------+-------------------------------------------------+
-; ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg0|q[0,1] ; Stuck at GND due to stuck port data_in          ;
-; ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg1|q[0,1] ; Stuck at GND due to stuck port data_in          ;
-; instructionMem:imem|instruction[26]                                        ; Merged with instructionMem:imem|instruction[6]  ;
-; instructionMem:imem|instruction[8..11,21]                                  ; Merged with instructionMem:imem|instruction[7]  ;
-; instructionMem:imem|instruction[31]                                        ; Merged with instructionMem:imem|instruction[29] ;
-; instructionMem:imem|instruction[7]                                         ; Stuck at GND due to stuck port data_in          ;
-; instructionMem:imem|instruction[30]                                        ; Lost fanout                                     ;
-; Total Number of Removed Registers = 13                                     ;                                                 ;
-+----------------------------------------------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                         ;
++--------------------------------------------------------------------------+-------------------------------------------------+
+; Register name                                                            ; Reason for Removal                              ;
++--------------------------------------------------------------------------+-------------------------------------------------+
+; instructionMem:imem|instruction[4..11]                                   ; Lost fanout                                     ;
+; ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg0|q[1] ; Stuck at GND due to stuck port data_in          ;
+; ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg1|q[1] ; Stuck at GND due to stuck port data_in          ;
+; instructionMem:imem|instruction[31]                                      ; Merged with instructionMem:imem|instruction[29] ;
+; instructionMem:imem|instruction[21]                                      ; Stuck at GND due to stuck port data_in          ;
+; Total Number of Removed Registers = 12                                   ;                                                 ;
++--------------------------------------------------------------------------+-------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -321,26 +319,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1175  ;
-; Number of registers using Synchronous Clear  ; 2     ;
-; Number of registers using Synchronous Load   ; 670   ;
-; Number of registers using Asynchronous Clear ; 32    ;
+; Total registers                              ; 568   ;
+; Number of registers using Synchronous Clear  ; 483   ;
+; Number of registers using Synchronous Load   ; 62    ;
+; Number of registers using Asynchronous Clear ; 34    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1122  ;
+; Number of registers using Clock Enable       ; 514   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
-; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:srcbmux|Z[16]                ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:srcbmux|Z[0]                 ;
-; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |top|ARMStruct:arm|datapath:Datapath|mux2x1_nBits:srcbmux|Z[2]                 ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |top|ARMStruct:arm|datapath:Datapath|ALU:alu|mux_result:mux_result_module|Mux1 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------+
@@ -453,118 +439,158 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|and_gate:and_module ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                            ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                  ;
-+----------------+-------+---------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; n              ; 32    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|or_gate:or_module ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                          ;
-+----------------+-------+-------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                ;
-+----------------+-------+-------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|fulladder:fulladder_module ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                      ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                            ;
++----------------+-------+-----------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|xor_gate:xor_module ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                            ;
-+----------------+-------+---------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                  ;
-+----------------+-------+---------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m1 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|mux_not:mux_not_module ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                               ;
-+----------------+-------+------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|fulladder:fulladder_module ;
-+----------------+-------+----------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                   ;
-+----------------+-------+----------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                         ;
-+----------------+-------+----------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|slr:slr_module ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|sll:sll_module ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|mux_result:mux_result_module ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                     ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                                           ;
-+----------------+-------+------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|flag_generator:flag_generator_module ;
-+----------------+-------+--------------------------------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                                             ;
-+----------------+-------+--------------------------------------------------------------------------------------------------+
-; n              ; 32    ; Signed Integer                                                                                   ;
-+----------------+-------+--------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|sar:sar_module ;
-+----------------+-------+----------------------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                                       ;
-+----------------+-------+----------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                             ;
-+----------------+-------+----------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m2 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                           ;
++----------------+-------+------------------------------------------------------------------------------------------------+
+; bits           ; 1     ; Signed Integer                                                                                 ;
++----------------+-------+------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|sc:sc_module ;
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log ;
 +----------------+-------+--------------------------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                                     ;
 +----------------+-------+--------------------------------------------------------------------------+
-; N              ; 32    ; Signed Integer                                                           ;
+; n              ; 32    ; Signed Integer                                                           ;
 +----------------+-------+--------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|and_gate:and_module ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|or_gate:or_module ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                       ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                             ;
++----------------+-------+--------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|xor_gate:xor_module ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                         ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                               ;
++----------------+-------+----------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_not:mux_not_module ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                            ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|slr:slr_module ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sll:sll_module ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sar:sar_module ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                    ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                          ;
++----------------+-------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "KeyboardDriver:kd"                                                                  ;
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sc:sc_module ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                  ;
++----------------+-------+---------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                        ;
++----------------+-------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_result:mux_result_module ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                  ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+; N              ; 32    ; Signed Integer                                                                                        ;
++----------------+-------+-------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ARMStruct:arm|datapath:Datapath|ALU:alu|mux2x1_nBits:m1 ;
++----------------+-------+-----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                        ;
++----------------+-------+-----------------------------------------------------------------------------+
+; bits           ; 32    ; Signed Integer                                                              ;
++----------------+-------+-----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "KeyboardDriver:keyDriver"                                                           ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -573,34 +599,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "KeyboardRegister:kr"                                                                ;
+; Port Connectivity Checks: "KeyboardRegister:key"                                                               ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; RD   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "BombRegister:br"                                                                     ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; RD    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; RXpos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; RYpos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "EnemiesRegister:er"                                                                  ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                             ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
-; RD    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; RXpos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; RYpos ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
@@ -609,8 +613,49 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Port          ; Type   ; Severity ; Details                                                                             ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; enablePointer ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; enableEnemies ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; enableBombs   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; enableLifes   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_result:mux_result_module"                                                                      ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port       ; Type  ; Severity ; Details                                                                                                                                            ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+; ALUControl ; Input ; Warning  ; Input port expression (3 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "ALUControl[3..3]" will be connected to GND. ;
++------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_not:mux_not_module"                                                                                                        ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                                                                                                          ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; control ; Input  ; Warning  ; Input port expression (3 bits) is wider than the input port (1 bits) it drives.  The 2 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; y       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                              ;
++---------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m1"                                                                                                        ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                                                                                            ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; S    ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (1 bits) it drives.  The 31 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
+; Z    ; Output ; Warning  ; Output or bidir port (32 bits) is wider than the port expression (1 bits) it drives; bit(s) "Z[31..1]" have no fanouts                                                             ;
+; Z    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                                                ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|fulladder:fulladder_module" ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                 ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
+; cin  ; Input ; Info     ; Stuck at GND                                                                            ;
++------+-------+----------+-----------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------+
@@ -666,48 +711,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+--------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ARMStruct:arm|datapath:Datapath"                                                    ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Z    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; N    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; V    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; C    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1175                        ;
+; arriav_ff             ; 568                         ;
+;     CLR               ; 2                           ;
 ;     CLR SLD           ; 30                          ;
-;     ENA               ; 480                         ;
-;     ENA CLR           ; 2                           ;
-;     ENA SLD           ; 640                         ;
-;     SCLR              ; 2                           ;
+;     ENA CLR SCLR      ; 2                           ;
+;     ENA SCLR          ; 480                         ;
+;     ENA SLD           ; 32                          ;
+;     SCLR              ; 1                           ;
 ;     plain             ; 21                          ;
-; arriav_lcell_comb     ; 900                         ;
-;     extend            ; 131                         ;
-;         7 data inputs ; 131                         ;
-;     normal            ; 677                         ;
-;         2 data inputs ; 19                          ;
-;         3 data inputs ; 94                          ;
-;         4 data inputs ; 18                          ;
-;         5 data inputs ; 137                         ;
-;         6 data inputs ; 409                         ;
-;     shared            ; 92                          ;
+; arriav_lcell_comb     ; 352                         ;
+;     extend            ; 1                           ;
+;         7 data inputs ; 1                           ;
+;     normal            ; 291                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 36                          ;
+;         4 data inputs ; 37                          ;
+;         5 data inputs ; 56                          ;
+;         6 data inputs ; 153                         ;
+;     shared            ; 60                          ;
 ;         1 data inputs ; 60                          ;
-;         2 data inputs ; 6                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 24                          ;
 ; boundary_port         ; 101                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 11.00                       ;
-; Average LUT depth     ; 7.08                        ;
+; Max LUT depth         ; 5.90                        ;
+; Average LUT depth     ; 3.51                        ;
 +-----------------------+-----------------------------+
 
 
@@ -716,7 +748,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -726,10 +758,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov 19 22:13:53 2019
+    Info: Processing started: Wed Nov 20 01:34:14 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Processor -c Processor
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file logicalu.sv
+    Info (12023): Found entity 1: logicALU File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file arithmeticalu.sv
+    Info (12023): Found entity 1: arithmeticALU File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/arithmeticALU.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file top.sv
     Info (12023): Found entity 1: top File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file bitextendertb.sv
@@ -809,12 +845,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file mux4x1.
 Info (12021): Found 0 design units, including 0 entities, in source file mux4x1selector.sv
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Info (12128): Elaborating entity "ARMStruct" for hierarchy "ARMStruct:arm" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 10
-Info (12128): Elaborating entity "ControlUnit" for hierarchy "ARMStruct:arm|ControlUnit:controller" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ARMStruct.sv Line: 12
+Info (12128): Elaborating entity "ControlUnit" for hierarchy "ARMStruct:arm|ControlUnit:controller" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ARMStruct.sv Line: 11
 Info (12128): Elaborating entity "decoder" for hierarchy "ARMStruct:arm|ControlUnit:controller|decoder:dec" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ControlUnit.sv Line: 18
 Info (12128): Elaborating entity "condLogic" for hierarchy "ARMStruct:arm|ControlUnit:controller|condLogic:cl" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ControlUnit.sv Line: 20
 Info (12128): Elaborating entity "FlipFlop" for hierarchy "ARMStruct:arm|ControlUnit:controller|condLogic:cl|FlipFlop:flagreg1" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/condLogic.sv Line: 11
 Info (12128): Elaborating entity "condCheck" for hierarchy "ARMStruct:arm|ControlUnit:controller|condLogic:cl|condCheck:cc" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/condLogic.sv Line: 18
-Info (12128): Elaborating entity "datapath" for hierarchy "ARMStruct:arm|datapath:Datapath" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ARMStruct.sv Line: 13
+Info (12128): Elaborating entity "datapath" for hierarchy "ARMStruct:arm|datapath:Datapath" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ARMStruct.sv Line: 12
 Info (12128): Elaborating entity "mux2x1_nBits" for hierarchy "ARMStruct:arm|datapath:Datapath|mux2x1_nBits:pcmux" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/datapath.sv Line: 22
 Info (12128): Elaborating entity "FlipFlop" for hierarchy "ARMStruct:arm|datapath:Datapath|FlipFlop:pcreg" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/datapath.sv Line: 23
 Info (12128): Elaborating entity "fulladder" for hierarchy "ARMStruct:arm|datapath:Datapath|fulladder:pcadd1" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/datapath.sv Line: 27
@@ -822,29 +858,29 @@ Info (12128): Elaborating entity "mux2x1_nBits" for hierarchy "ARMStruct:arm|dat
 Info (12128): Elaborating entity "bankReg" for hierarchy "ARMStruct:arm|datapath:Datapath|bankReg:rf" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/datapath.sv Line: 35
 Info (12128): Elaborating entity "bitextender" for hierarchy "ARMStruct:arm|datapath:Datapath|bitextender:ext" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/datapath.sv Line: 38
 Info (12128): Elaborating entity "ALU" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/datapath.sv Line: 43
-Info (12128): Elaborating entity "and_gate" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|and_gate:and_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 18
-Info (12128): Elaborating entity "or_gate" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|or_gate:or_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 19
-Info (12128): Elaborating entity "xor_gate" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|xor_gate:xor_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 20
-Info (12128): Elaborating entity "mux_not" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|mux_not:mux_not_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 21
-Info (12128): Elaborating entity "fulladder" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|fulladder:fulladder_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 22
-Info (12128): Elaborating entity "slr" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|slr:slr_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 23
-Info (12128): Elaborating entity "sll" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|sll:sll_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 24
-Info (12128): Elaborating entity "mux_result" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|mux_result:mux_result_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 25
-Info (12128): Elaborating entity "flag_generator" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|flag_generator:flag_generator_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 26
-Info (12128): Elaborating entity "sar" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|sar:sar_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 27
-Info (12128): Elaborating entity "sc" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|sc:sc_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 28
+Info (12128): Elaborating entity "arithmeticALU" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 19
+Info (12128): Elaborating entity "fulladder" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|fulladder:fulladder_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/arithmeticalu.sv Line: 11
+Info (12128): Elaborating entity "mux2x1_nBits" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|arithmeticALU:arit|mux2x1_nBits:m2" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/arithmeticalu.sv Line: 15
+Info (12128): Elaborating entity "logicALU" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/ALU.sv Line: 21
+Info (12128): Elaborating entity "and_gate" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|and_gate:and_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 17
+Info (12128): Elaborating entity "or_gate" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|or_gate:or_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 18
+Info (12128): Elaborating entity "xor_gate" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|xor_gate:xor_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 19
+Info (12128): Elaborating entity "mux_not" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_not:mux_not_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 20
+Info (12128): Elaborating entity "slr" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|slr:slr_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 21
+Info (12128): Elaborating entity "sll" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sll:sll_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 22
+Info (12128): Elaborating entity "sar" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sar:sar_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 23
+Info (12128): Elaborating entity "sc" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|sc:sc_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 24
+Info (12128): Elaborating entity "mux_result" for hierarchy "ARMStruct:arm|datapath:Datapath|ALU:alu|logicALU:log|mux_result:mux_result_module" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/logicalu.sv Line: 26
 Info (12128): Elaborating entity "instructionMem" for hierarchy "instructionMem:imem" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 12
 Warning (10030): Net "ram.data_a" at instructionMem.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/instructionMem.sv Line: 5
 Warning (10030): Net "ram.waddr_a" at instructionMem.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/instructionMem.sv Line: 5
 Warning (10030): Net "ram.we_a" at instructionMem.sv(5) has no driver or initial value, using a default initial value '0' File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/instructionMem.sv Line: 5
 Info (12128): Elaborating entity "addressingDecoder" for hierarchy "addressingDecoder:addrDeco" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 14
 Info (12128): Elaborating entity "dataMem" for hierarchy "dataMem:deme" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 16
-Info (12128): Elaborating entity "EnemiesRegister" for hierarchy "EnemiesRegister:er" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 18
-Info (12128): Elaborating entity "BombRegister" for hierarchy "BombRegister:br" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 20
-Info (12128): Elaborating entity "KeyboardRegister" for hierarchy "KeyboardRegister:kr" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 22
-Info (12128): Elaborating entity "KeyboardDriver" for hierarchy "KeyboardDriver:kd" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 24
+Info (12128): Elaborating entity "KeyboardRegister" for hierarchy "KeyboardRegister:key" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 22
+Info (12128): Elaborating entity "KeyboardDriver" for hierarchy "KeyboardDriver:keyDriver" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 24
 Info (276014): Found 3 instances of uninferred RAM logic
-    Info (276007): RAM logic "dataMem:deme|ram" is uninferred due to asynchronous read logic File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/dataMem.sv Line: 5
+    Info (276004): RAM logic "dataMem:deme|ram" is uninferred due to inappropriate RAM size File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/dataMem.sv Line: 5
     Info (276004): RAM logic "instructionMem:imem|ram" is uninferred due to inappropriate RAM size File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/instructionMem.sv Line: 5
     Info (276007): RAM logic "ARMStruct:arm|datapath:Datapath|bankReg:rf|rf" is uninferred due to asynchronous read logic File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/bankReg.sv Line: 7
 Critical Warning (127005): Memory depth (32) in the design file differs from memory depth (23) in the Memory Initialization File "C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/db/Processor.ram0_instructionMem_e3f1af89.hdl.mif" -- setting initial value for remaining addresses to 0
@@ -881,23 +917,57 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "dataMem:deme|RD[29]" feeding internal logic into a wire File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/dataMem.sv Line: 3
     Warning (13049): Converted tri-state buffer "dataMem:deme|RD[30]" feeding internal logic into a wire File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/dataMem.sv Line: 3
     Warning (13049): Converted tri-state buffer "dataMem:deme|RD[31]" feeding internal logic into a wire File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/dataMem.sv Line: 3
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DataAdr[0]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[1]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[2]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[3]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[4]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[5]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[6]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[7]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[8]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[9]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[10]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[11]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[12]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[13]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[14]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[15]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[16]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[17]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[18]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[19]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[20]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[21]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[22]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[23]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[24]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[25]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[26]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[27]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[28]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[29]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[30]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
+    Warning (13410): Pin "DataAdr[31]" is stuck at GND File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 2
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/output_files/Processor.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 2 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "ps2_clk" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 1
     Warning (15610): No output dependent on input pin "data" File: C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/top.sv Line: 1
-Info (21057): Implemented 2153 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 966 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 97 output pins
-    Info (21061): Implemented 2052 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 4847 megabytes
-    Info: Processing ended: Tue Nov 19 22:14:31 2019
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:00:51
+    Info (21061): Implemented 865 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 75 warnings
+    Info: Peak virtual memory: 4849 megabytes
+    Info: Processing ended: Wed Nov 20 01:34:27 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:26
 
 
 +------------------------------------------+

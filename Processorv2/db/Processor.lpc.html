@@ -16,7 +16,7 @@
 <TH>Output only Bidir</TH>
 </TR>
 <TR >
-<TD >kd</TD>
+<TD >keyDriver</TD>
 <TD >2</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -32,44 +32,12 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >kr</TD>
+<TD >key</TD>
 <TD >67</TD>
 <TD >0</TD>
 <TD >31</TD>
 <TD >0</TD>
 <TD >32</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-</TR>
-<TR >
-<TD >br</TD>
-<TD >67</TD>
-<TD >0</TD>
-<TD >31</TD>
-<TD >0</TD>
-<TD >96</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-</TR>
-<TR >
-<TD >er</TD>
-<TD >67</TD>
-<TD >0</TD>
-<TD >31</TD>
-<TD >0</TD>
-<TD >96</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -128,7 +96,39 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|sc_module</TD>
+<TD >arm|Datapath|alu|m1</TD>
+<TD >65</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >32</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >arm|Datapath|alu|log|mux_result_module</TD>
+<TD >260</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >1</TD>
+<TD >32</TD>
+<TD >1</TD>
+<TD >1</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >arm|Datapath|alu|log|sc_module</TD>
 <TD >32</TD>
 <TD >0</TD>
 <TD >1</TD>
@@ -144,7 +144,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|sar_module</TD>
+<TD >arm|Datapath|alu|log|sar_module</TD>
 <TD >64</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -160,39 +160,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|flag_generator_module</TD>
-<TD >101</TD>
-<TD >0</TD>
-<TD >65</TD>
-<TD >0</TD>
-<TD >4</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-</TR>
-<TR >
-<TD >arm|Datapath|alu|mux_result_module</TD>
-<TD >260</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >32</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-</TR>
-<TR >
-<TD >arm|Datapath|alu|sll_module</TD>
+<TD >arm|Datapath|alu|log|sll_module</TD>
 <TD >64</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -208,7 +176,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|slr_module</TD>
+<TD >arm|Datapath|alu|log|slr_module</TD>
 <TD >64</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -224,23 +192,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|fulladder_module</TD>
-<TD >65</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >33</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-<TD >0</TD>
-</TR>
-<TR >
-<TD >arm|Datapath|alu|mux_not_module</TD>
+<TD >arm|Datapath|alu|log|mux_not_module</TD>
 <TD >33</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -256,7 +208,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|xor_module</TD>
+<TD >arm|Datapath|alu|log|xor_module</TD>
 <TD >64</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -272,7 +224,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|or_module</TD>
+<TD >arm|Datapath|alu|log|or_module</TD>
 <TD >64</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -288,7 +240,7 @@
 <TD >0</TD>
 </TR>
 <TR >
-<TD >arm|Datapath|alu|and_module</TD>
+<TD >arm|Datapath|alu|log|and_module</TD>
 <TD >64</TD>
 <TD >0</TD>
 <TD >0</TD>
@@ -297,6 +249,86 @@
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >arm|Datapath|alu|log</TD>
+<TD >67</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >32</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >arm|Datapath|alu|arit|m2</TD>
+<TD >3</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >arm|Datapath|alu|arit|m1</TD>
+<TD >65</TD>
+<TD >31</TD>
+<TD >0</TD>
+<TD >31</TD>
+<TD >32</TD>
+<TD >31</TD>
+<TD >31</TD>
+<TD >31</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >arm|Datapath|alu|arit|fulladder_module</TD>
+<TD >65</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >1</TD>
+<TD >33</TD>
+<TD >1</TD>
+<TD >1</TD>
+<TD >1</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+</TR>
+<TR >
+<TD >arm|Datapath|alu|arit</TD>
+<TD >65</TD>
+<TD >33</TD>
+<TD >32</TD>
+<TD >33</TD>
+<TD >33</TD>
+<TD >33</TD>
+<TD >33</TD>
+<TD >33</TD>
 <TD >0</TD>
 <TD >0</TD>
 <TD >0</TD>

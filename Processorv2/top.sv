@@ -1,5 +1,5 @@
-module top (input logic clk, reset, data,
-				output logic [31:0] WriteData, DataAdr,
+module top (input logic clk, ps2_clk, reset, data,
+				output logic [31:0] WriteData, DataAdr, PC_out,
 				output logic MemWrite);
 	
 	logic [31:0] PC, Instr, ReadData, ReadDataEnemies, ReadDataBombs, ReadDataKey;
@@ -19,10 +19,11 @@ module top (input logic clk, reset, data,
 	
 	//BombRegister br(DataAdr,WriteData,enableBomb, MemWrite, clk, ReadDataBombs, bombPosX, bombPosY);
 	
-	KeyboardRegister(DataAdr, WriteData, enableKey, MemWrite, clk, ReadDataKey);
+	KeyboardRegister key(DataAdr, WriteData, enableKey, MemWrite, clk, ReadDataKey);
 	
-	KeyboardDriver(clk, data, code);
+	KeyboardDriver keyDriver(ps2_clk, data, code);
 	
-
+	assign PC_out = PC;
+	
 endmodule
 

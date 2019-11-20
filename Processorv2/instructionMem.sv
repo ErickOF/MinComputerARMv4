@@ -6,7 +6,7 @@ reg [31:0] ram [22:0];
 
 initial begin
 
-	$readmemh("C:/Users/REIRA/OneDrive/Documentos/Proyecto Final/Proyecto/Proyecto/HEX.txt", ram);
+	$readmemh("C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/HEX.txt", ram);
 	
 end
 	
