@@ -1,0 +1,16 @@
+module arithmeticALU	#(parameter n = 32)(input logic [n-1:0] A, B,
+													  input logic S,
+													  output logic Y_CB,
+													  output logic [n-1:0] Y);
+	
+	logic Cout, Bout;
+	logic [n-1:0] Y_add, Y_SUB;
+	
+	FullAdder_nn #(n) fa1(Cout, Y_add, 1'b0, A, B);
+	FullSubstracter_nn #(n) fs1(Bout, Y_sub, 1'b0, A, B);
+	
+	MUX2x1_nbits #(n) m1(Y, Y_add, Y_sub, S);
+	
+	MUX2x1_nbits #(1) m2(Y_CB, Cout, Bout, S);
+	
+endmodule
