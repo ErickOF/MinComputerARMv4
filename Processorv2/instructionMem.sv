@@ -5,7 +5,9 @@ module instructionMem(input logic[31:0]PC,
 reg [31:0] ram [22:0];
 
 initial begin
-	$readmemh("C:/Users/ErickOF/Documents/Git/MinComputerARMv4/Processorv2/memfile.txt", ram);
+
+	$readmemh("C:/Users/REIRA/OneDrive/Documentos/Proyecto Final/Proyecto/Proyecto/HEX.txt", ram);
+	
 end
 	
 always @ (posedge clk)
